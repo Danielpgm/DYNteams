@@ -11,18 +11,40 @@
     height: 100vh;
     object-fit: cover;
 }
-.anata{
-    width: 90%;
-    height: 540px;
+.genre-card{
+    width: 65%;
+    height: 400px;
     margin-top: 20px;
-    background-color: black;
+    /* background-color: black; */
+    opacity: 0.4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main-content{
+    width: 60%;
+    height: 400px;
+    margin-top: 20px;
+    /* background-color: azure; */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .card{
-    height: 50px;
-    width: 50px;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+}
+.img-card{
+    height: 150px;
+    width: 110px;
+    object-fit: fill;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 10px 1px black;
 }
 
