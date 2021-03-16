@@ -11,11 +11,22 @@
     height: 100vh;
     object-fit: cover;
 }
+.back-cover{
+    background-color: rgb(255, 240, 240);
+    width: 60%;
+    height: 480px;
+    opacity: 0.3;
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .main-content{
     width: 60%;
     height: 400px;
     margin-top: 20px;
-    background-color: azure;
+    padding-left: 10px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -28,12 +39,9 @@
     padding: 0;
 }
 .img-card{
-    height: 150px;
+    /* height: 150px; */
     width: 110px;
     object-fit: fill;
-    margin-left: 20px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    box-shadow: 1px 1px 10px 1px black;
+    box-shadow: 5px 1px 20px 1px black;
 }
 
