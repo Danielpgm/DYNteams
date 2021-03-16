@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>DYTeam</title>
+</head>
+<body>
+    <header id="profilePage">
+
+        <div class="nav-container" id="navbar2">
+    
+            <div id="myNav" class="overlayNav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlayNav-content">
+                    <a href="home.html">Home</a>
+                    <a href="catalogue.html">Catalogue</a>
+                    <a href="location.html">Location</a>
+                    <a href="#profilePage" onclick="closeNav()">Profile</a>
+                </div>
+            </div>
+    
+            <span class="cursor" onclick="openNav()">&#9776;</span>
+    
+            <div class="logo1">
+                <img src="assets/logo.png" alt="logo library" class="logo">
+            </div>
+    
+            <a class="akun" href="#">
+                <button type="button" class="btn btn-light btnLogin">Nazli Alvira Siregar</button>
+            </a>
+    
+        </div>
+    
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="saldo">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <img src="assets/rupiah.png" alt="rupiah" style="width: 15px;">
+                            </div>
+                            <div class="col-sm-10 text-muted">
+                                <b>Saldo</b>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-sm-7 sisaSaldo text-muted">
+                                Sisa Saldo 
+                            </div>
+                            <div class="col-sm-5 sisaSaldo text-muted">
+                                Rp 10.000
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <img src="assets/silver.png" alt="rupiah" style="width: 15px;">
+                            </div>
+                            <div class="col-sm-10 text-muted saldo">
+                                <b>Member Silver</b>
+                            </div>
+                        </div>
+                        <div class="row">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="card">
+                    <div class="row mx-5 my-5">
+                        <div class="col-sm-3">
+                            <div class="card-group">
+                                <div class="card">
+                                    <img src="assets/profile.jpg" class="card-img-top img-profile" alt="profile photo">
+                                    <div class="card-body">
+                                        <button type="button" class="btn buttonPhoto">Choose Photo</button>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Besar file: maksimum 10.000.000 bytes (10 Megabytes). Ekstensi file yang diperbolehkan: .JPG .JPEG .PNG</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="data">
+                                <table>
+                                    <tr>
+                                        <td>Nama</td>
+                                        <td>&nbsp;&nbsp;&nbsp;</td>
+                                        <td>Nazli Alvira Siregar</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <b class="onProgressText">On Progress Book</b>
+        </div>
+        <div class="row">
+            <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+                <div class="MultiCarousel-inner">
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="assets/cover.jpg" alt="" class="bookPhoto">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="assets/cover.jpg" alt="" class="bookPhoto">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="assets/cover.jpg" alt="" class="bookPhoto">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="assets/cover.jpg" alt="" class="bookPhoto">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="assets/cover.jpg" alt="" class="bookPhoto">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="assets/cover.jpg" alt="" class="bookPhoto">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="assets/cover.jpg" alt="" class="bookPhoto">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-secondary leftLst"><</button>
+                <button class="btn btn-secondary rightLst">></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <b class="onProgressText">Current Book</b>
+        </div>
+        <div class="row">
+            <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+                <div class="MultiCarousel-inner">
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="assets/cover.jpg" alt="" class="bookPhoto">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="assets/cover.jpg" alt="" class="bookPhoto">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="assets/cover.jpg" alt="" class="bookPhoto">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="assets/cover.jpg" alt="" class="bookPhoto">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="assets/cover.jpg" alt="" class="bookPhoto">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="assets/cover.jpg" alt="" class="bookPhoto">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="assets/cover.jpg" alt="" class="bookPhoto">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-secondary leftLst"><</button>
+                <button class="btn btn-secondary rightLst">></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <b class="onProgressText">History Book</b>
+        </div>
+        <div class="row">
+            <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+                <div class="MultiCarousel-inner">
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="assets/cover.jpg" alt="" class="bookPhoto">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="assets/cover.jpg" alt="" class="bookPhoto">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="assets/cover.jpg" alt="" class="bookPhoto">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="assets/cover.jpg" alt="" class="bookPhoto">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="assets/cover.jpg" alt="" class="bookPhoto">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="assets/cover.jpg" alt="" class="bookPhoto">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <img src="assets/cover.jpg" alt="" class="bookPhoto">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-secondary leftLst"><</button>
+                <button class="btn btn-secondary rightLst">></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar2").style.backgroundColor = "#f0f0f0";
+            }
+            else{
+                document.getElementById("navbar2").style.backgroundColor = "#ffffff";
+            }
+        }
+    
+        var slideIndex = 1;
+        showSlides(slideIndex);
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>
