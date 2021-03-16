@@ -11,22 +11,11 @@
     height: 100vh;
     object-fit: cover;
 }
-.genre-card{
-    width: 65%;
-    height: 400px;
-    margin-top: 20px;
-    /* background-color: black; */
-    opacity: 0.4;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 .main-content{
     width: 60%;
     height: 400px;
     margin-top: 20px;
-    /* background-color: azure; */
+    background-color: azure;
     position: absolute;
     top: 50%;
     left: 50%;
