@@ -11,18 +11,38 @@
     height: 100vh;
     object-fit: cover;
 }
-.anata{
-    width: 90%;
-    height: 540px;
+.back-cover{
+    background-color: rgb(255, 240, 240);
+    width: 60%;
+    height: 480px;
+    opacity: 0.3;
     margin-top: 20px;
-    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 10px 8px 0px;
+}
+.main-content{
+    width: 60%;
+    height: 400px;
+    margin-top: 20px;
+    padding-left: 10px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .card{
-    height: 50px;
-    width: 50px;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+}
+.img-card{
+    /* height: 150px; */
+    width: 110px;
+    object-fit: fill;
+    box-shadow: 5px 1px 20px 1px black;
 }
 
