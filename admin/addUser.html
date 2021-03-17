@@ -13,6 +13,11 @@
     <!-- sidebar -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
+    <!-- sweet alert -->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@8/dist/sweetalert2.min.css">
+
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
@@ -96,84 +101,48 @@
             </nav>
 
             <!-- DataTales Example -->
-            <div class="card shadow mb-4">
+            <div class="card shadow mb-4 mx-5">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-dark">Manage Users</h6>
+                    <h6 class="m-0 font-weight-bold text-dark">Add User</h6>
                 </div>
                 <div class="card-body">
-                    <a href="addUser.html" class="btn btn-primary float-end mb-2">Add Data</a>
-                    <div class="table-responsive">
-                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                            <thead>
-                                <tr>
-                                    <th>No.</th>
-                                    <th>ID&nbsp;User</th>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Phone&nbsp;Number</th>
-                                    <th>Member</th>
-                                    <th class="text-center">Status</th>
-                                    <th class="text-center">Action</th>
-                                </tr>
-                            </thead>
-                            <tfoot>
-                                <tr>
-                                    <th>No.</th>
-                                    <th>ID&nbsp;User</th>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Phone&nbsp;Number</th>
-                                    <th>Member</th>
-                                    <th class="text-center">Status</th>
-                                    <th class="text-center">Action</th>
-                                </tr>
-                            </tfoot>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>U001</td>
-                                    <td>Daniel Paskalis</td>
-                                    <td>daniel@gmail.com</td>
-                                    <td>+6281256746632</td>
-                                    <td>Silver</td>
-                                    <td class="text-center"><a href="#" type="button" class="badge badge-primary">ACTIVE</a></td>
-                                    <td class="text-center">
-                                        <a href="#" data-toggle="modal" data-target="#resetPasswordModal" class="badge badge-warning text-uppercase"><i class="fas fa-key"></i>&nbsp;Reset Password</a><br />
-                                        <a href="#" class="badge badge-primary text-uppercase"><i class="fas fa-edit"></i>&nbsp;Edit Detail</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>U002</td>
-                                    <td>Yona Astika</td>
-                                    <td>yona@gmail.com</td>
-                                    <td>+62898765721</td>
-                                    <td>Gold</td>
-                                    <td class="text-center"><a href="#" type="button" class="badge badge-primary">ACTIVE</a></td>
-                                    <td class="text-center">
-                                        <a href="#" data-toggle="modal" data-target="#resetPasswordModal" class="badge badge-warning text-uppercase"><i class="fas fa-key"></i>&nbsp;Reset Password</a><br />
-                                        <a href="#" class="badge badge-primary text-uppercase"><i class="fas fa-edit"></i>&nbsp;Edit Detail</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>U003</td>
-                                    <td>Nazli Alvira Siregar</td>
-                                    <td>nazli@gmail.com</td>
-                                    <td>+62890876677</td>
-                                    <td>Silver</td>
-                                    <td class="text-center"><a href="#" type="button" class="badge badge-danger">DEACTIVE</a></td>
-                                    <td class="text-center">
-                                        <a href="#" data-toggle="modal" data-target="#resetPasswordModal" class="badge badge-warning text-uppercase"><i class="fas fa-key"></i>&nbsp;Reset Password</a><br />
-                                        <a href="#" class="badge badge-primary text-uppercase"><i class="fas fa-edit"></i>&nbsp;Edit Detail</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="row">
+                        <div class="col-md">
+                            <form action="">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-8">
+                                        <div class="form-group mb-3">
+                                            <label for="IDUser" class="form-label">ID User</label>
+                                            <input type="number" class="form-control" id="idUser" value="4" readonly>
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <label for="name" class="form-label">Name</label>
+                                            <input type="text" class="form-control" id="name">
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <label for="email" class="form-label">Email Address</label>
+                                            <input type="email" class="form-control" id="email">
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <label for="phone" class="form-label">Phone Number</label>
+                                            <input type="text" class="form-control" id="phone">
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <select class="form-select" aria-label="member">
+                                                <option selected>-Choose Member-</option>
+                                                <option value="Comic">Gold</option>
+                                                <option value="Comic">Platinum</option>
+                                                <option value="Architecture">Silver</option>
+                                            </select>
+                                        </div>
+                                        <a href="user.html" class="btn btn-primary float-end">Add</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -190,6 +159,7 @@
                 $('#sidebar').toggleClass('active');
             });
         });
+        
     </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -202,5 +172,8 @@
 
     <!-- Page level custom scripts -->
     <script src="../js/demo/datatables-demo.js"></script>
+
+    <!-- sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
