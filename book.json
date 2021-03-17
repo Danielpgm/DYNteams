@@ -1,0 +1,74 @@
+[
+    {
+        "no" : 1,
+        "id_book" : "B001",
+        "cover" : "../assets/book/B001.jpeg",
+        "category" : "Novel",
+        "title" : "Jalan Panjang untuk Pulang",
+        "author" : "Agustinus Wibowo",
+        "publisher" : "Gramedia",
+        "year" : 2021,
+        "synopsis" : "Dalam sebagian besar tulisannya, dia membawa serta para pembacanya pada pencarian identitas berupa perjalanan untuk mencari makna “rumah”. Tempat-tempat yang dikunjungi Agustinus bukanlah tempat-tempat yang nyaman, tenang, atau bahkan indah dalam kacamata tamasya. Tempat-tempat itu sering kali berada di perbatasan, di wilayah penuh konflik berlapis dengan masyarakat yang berupaya mencari atau mempertahankan identitas. Dari tempat-tempat ini, kita bisa mendapatkan refleksi yang sesuai dengan kegelisahan kita, juga pertanyaan-pertanyaan yang berkecamuk dalam benak kita dan terus relevan dari masa ke masa. Yaitu pertanyaan tentang identitas diri. Ini adalah pertanyaan yang justru semakin menguat di tengah dunia yang semakin mengglobal. Jalan Panjang untuk Pulang adalah kumpulan cerita dan esai dari berbagai lokasi yang pernah disinggahi Agustinus, yang mengajak kita untuk mengalami berbagai dimensi perjalanan. Dari perjalanan fisik hingga perjalanan batin. Dari melihat dunia luar hingga pulang ke dalam diri. Dari pencarian hingga penemuan makna yang hakiki.",
+        "stock" : 8
+    },
+    {
+        "no" : 2,
+        "id_book" : "B002",
+        "cover" : "../assets/book/B002.jpg",
+        "category" : "Computer & Technology",
+        "title" : "This Is How They Tell Me the World Ends: The Cyberweapons Arms Race",
+        "author" : "Nicole Perlroth",
+        "publisher" : "Amazon",
+        "year" : 2021,
+        "synopsis" : "Part John le Carré and more parts Michael Crichton spellbinding. -The New Yorker. <br> From The New York Times cybersecurity reporter Nicole Perlroth,the untold story of the cyberweapons market-the most secretive, invisible, government-backed market on earth-and a terrifying first look at a new kind of global warfare.",
+        "stock" : 7
+    },
+    {
+        "no" : 3,
+        "id_book" : "B003",
+        "cover" : "../assets/book/B003.jpeg",
+        "category" : "Novel",
+        "title" : "Pulang Pergi",
+        "author" : "Tere Liye",
+        "publisher" : "Sabak Grip Nusantara",
+        "year" : 2021,
+        "synopsis" : "Ada jodoh yang ditemukan lewat tatapan pertama.Ada persahabatan yang diawali lewat sapa hangat.Bagaimana jika takdir bersama ternyata, diawali dengan pertarungan mematikan? Lantas semua cerita berkelindan dengan, pengejaran demi pengejaran mencari jawaban?Pulang-Pergi",
+        "stock" : 7
+    },
+    {
+        "no" : 4,
+        "id_book" : "B004",
+        "cover" : "../assets/book/B004.jpg",
+        "category" : "Personal Development",
+        "title" : "The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life",
+        "author" : "Mark Manson",
+        "publisher" : "HarperAudio",
+        "year" : 2016,
+        "synopsis" : "In this generation-defining self-help guide, a superstar blogger cuts through the crap to show us how to stop trying to be positive all the time so that we can truly become better, happier people. <br> For decades we've been told that positive thinking is the key to a happy, rich life.\"F*ck positivity,\" Mark Manson says. \"Let's be honest, shit is f*cked, and we have to live with it.\" In his wildly popular Internet blog, Manson doesn't sugarcoat or equivocate. He tells it like it is - a dose of raw, refreshing, honest truth that is sorely lacking today. The Subtle Art of Not Giving a F*ck is his antidote to the coddling let's-all-feel-good mind-set that has infected modern society and spoiled a generation, rewarding them with gold medals just for showing up. <br> Manson makes the argument, backed by both academic research and well-timed poop jokes, that improving our lives hinges not on our ability to turn lemons into lemonade but on learning to stomach lemons better. Human beings are flawed and limited - \"not everybody can be extraordinary; there are winners and losers in society, and some of it is not fair or your fault\". Manson advises us to get to know our limitations and accept them. Once we embrace our fears, faults, and uncertainties, once we stop running and avoiding and start confronting painful truths, we can begin to find the courage, perseverance, honesty, responsibility, curiosity, and forgiveness we seek. <br> There are only so many things we can give a f*ck about, so we need to figure out which ones really matter, Manson makes clear. While money is nice, caring about what you do with your life is better, because true wealth is about experience. A much-needed grab-you-by-the-shoulders-and-look-you-in-the-eye moment of real talk, filled with entertaining stories and profane, ruthless humor, The Subtle Art of Not Giving a F*ck is a refreshing slap for a generation to help them lead contented, grounded lives. ",
+        "stock" : 16
+    },
+    {
+        "no" : 5,
+        "id_book" : "B005",
+        "cover" : "../assets/book/B005.jpeg",
+        "category" : "Comic, Fantasy",
+        "title" : "Pergi",
+        "author" : "Tere Liye",
+        "publisher" : "Republika",
+        "year" : 2018,
+        "synopsis" : "Sebuah kisah tentang menemukan tujuan, ke mana hendak pergi, melalui kenangan demi kenangan masa lalu, pertarungan hidup-mati, untuk memutuskan ke mana langkah kaki akan dibawa. <br> Kata “PERGI” dikatakan jika saah seorang akan menuju ke suatu tempat, atau bisa jadi menjadi menjadi suatu tujuan hidup seseorang. Menetukan akan kemana setelah ini itu tidaklah mudah, apalagi itu berhubungan dengan hidup pribadi. prosesnya tidak lah sesingkat ketika membuat status social media kalian. <br> Yah cerita dalam novel ini tentang Bujang, ya tokoh yang sama di novel PULANG dengan pengarang yang sama yaitu Tere Liye. Berkisah tentang Bujang yang sibuk menjadi pentolan keluarga Tong. Keluarga Tong adalah salah satu dari shadow economy. Shadow economy sendiri dibagi beberapa keluarga dengan daerah – daerah tersendiri. Terlalu rumit urusan keluarga shadow economy tersebut. <br> Kehidupan bujang setelah ditinggal oleh orang – orang terdekat nya seperti mamak, Tauke besar, dan beberapa guru yang mengajarinya. Bujang tinggal tetap di markas keluarga tong di ibu kota. Kali ini Bujang telah memiliki banyak rekan dan beberapa rekan lamanya yang ada di novel sebelumnya. Di cerita ini Bujang bukanlah menjadi tukang pukul nomor satu di keluarga tong, tetapi juga tetap menjadi keluarga tong. <br> Bujang bekerja sama dengan kepala tukang pukul keluarga tong yaitu Togar dan orang yang ada di novel sebelumnya yaitu Parwez untuk membawa keluarga Tong menjadi lebih besar dan berkembang kearah yang lebih baik. <br>  Di novel ini bujang bertemu dengan Thomas ya yaitu salah satu tokoh di novel negeri para bedebah dan negeri di ujung tanduk. dan tokoh yang muncul beberapa kepala keluarga dari shadow economy. Dan ada sosok bertopeng misterius yang muncul di meksiko yang telah mengetahui nama asli bujang, padahal tidak sembarangan orang tahu nama asli dari Bujang si babi hutan.",
+        "stock" : 2
+    },
+    {
+        "no" : 6,
+        "id_book" : "B006",
+        "cover" : "../assets/book/B006.jpg",
+        "category" : "Computer & Technology",
+        "title" : "Thing Explainer: Complicated Stuff in Simple Words",
+        "author" : "Randall Munroe",
+        "publisher" : "Amazon",
+        "year" : 2015,
+        "synopsis" : "Have you ever tried to learn more about some incredible thing, only to be frustrated by incomprehensible jargon? Randall Munroe is here to help. In Thing Explainer, he uses line drawings and only the thousand (or, rather, “ten hundred”) most common words to provide simple explanations for some of the most interesting stuff there is, including: <br>food-heating radio boxes (microwaves) <br> tall roads (bridges) <br> computer buildings (datacenters) <br> the shared space house (the International Space Station) <br> the other worlds around the sun (the solar system) <br> the big flat rocks we live on (tectonic plates) <br> the pieces everything is made of (the periodic table) <br> planes with turning wings (helicopters) <br> boxes that make clothes smell better (washers and dryers) <br> the bags of stuff inside you (cells) <br> How do these things work? Where do they come from? What would life be like without them? And what would happen if we opened them up, heated them up, cooled them down, pointed them in a different direction, or pressed this button? In Thing Explainer, Munroe gives us the answers to these questions and so many more. Funny, interesting, and always understandable, this book is for anyone—age 5 to 105—who has ever wondered how things work, and why.",
+        "stock" : 7
+    }
+]
