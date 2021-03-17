@@ -1,0 +1,40 @@
+body{
+    background-image: url(../assets/back1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+
+    padding-top: 25px;
+}
+
+
+
+.card-body{
+    width: auto;
+    font-family:'Segoe UI';
+    background-color: rgba(0, 0, 0, 0.164);
+    color: black;
+}
+
+
+
+
+.glyphicon {  margin-bottom: 10px;margin-right: 10px;}
+
+small {
+display: block;
+line-height: 1.428571429;
+color: #999;
+}
+
+#namaprofile{
+    color: black;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium';
+
+}
+
+
+
