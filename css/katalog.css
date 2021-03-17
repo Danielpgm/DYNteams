@@ -1,0 +1,47 @@
+/* .container-fluid{
+    background-color: rgb(143, 240, 191);
+} */
+.content{
+    margin: 0; /* untuk menghilangkan margin pada content*/
+    padding: 0; /*menghilangkan padding*/
+    position: relative;
+}
+.object-cover{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.back-cover{
+    background-color: rgb(255, 240, 240);
+    width: 60%;
+    height: 480px;
+    opacity: 0.3;
+    margin-top: 20px;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 10px 8px 0px;
+}
+.main-content{
+    width: 60%;
+    height: 400px;
+    margin-top: 20px;
+    padding-left: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+}
+.img-card{
+    height: 160px;
+    width: auto;
+    object-fit:cover;
+    box-shadow: 5px 1px 20px 1px black;
+}
