@@ -70,5 +70,53 @@
         "year" : 2015,
         "synopsis" : "Have you ever tried to learn more about some incredible thing, only to be frustrated by incomprehensible jargon? Randall Munroe is here to help. In Thing Explainer, he uses line drawings and only the thousand (or, rather, “ten hundred”) most common words to provide simple explanations for some of the most interesting stuff there is, including: <br>food-heating radio boxes (microwaves) <br> tall roads (bridges) <br> computer buildings (datacenters) <br> the shared space house (the International Space Station) <br> the other worlds around the sun (the solar system) <br> the big flat rocks we live on (tectonic plates) <br> the pieces everything is made of (the periodic table) <br> planes with turning wings (helicopters) <br> boxes that make clothes smell better (washers and dryers) <br> the bags of stuff inside you (cells) <br> How do these things work? Where do they come from? What would life be like without them? And what would happen if we opened them up, heated them up, cooled them down, pointed them in a different direction, or pressed this button? In Thing Explainer, Munroe gives us the answers to these questions and so many more. Funny, interesting, and always understandable, this book is for anyone—age 5 to 105—who has ever wondered how things work, and why.",
         "stock" : 7
+    },
+    {
+        "no" : 7,
+        "id_book" : "B007",
+        "cover" : "../assets/book/B007.jpg",
+        "category" : "Comic",
+        "title" : "Detektif Conan 96",
+        "author" : "Aoyama Gosho",
+        "publisher" : "Elex Media Pengarang",
+        "year" : 2019,
+        "synopsis" : "Pertama kalinya Heiji Hattori berhadapan dengan si Kid Pencuri yang mengincar \"Fairy Lip \"! Di kasus lain Makoto Kyogoku terlibat dalam insiden di lokasi syuting TV drama. . . ! ? Selanjutnya ada informasi baru terkuaknya bos Organisasi Baju Hitam!!",
+        "stock" : 7
+    },
+    {
+        "no" : 8,
+        "id_book" : "B008",
+        "cover" : "../assets/book/B008.jpg",
+        "category" : "Comic",
+        "title" : "Avatar: The Last Airbender - Toph Beifong's Metalbending Academy",
+        "author" : "Faith Erin Hicks",
+        "publisher" : "Penguin Random House",
+        "year" : 2020,
+        "synopsis" : "Things are looking bright at the Beifong Metalbending Academy! But after all the adventures Toph's had with Aang, Sokka, Zuko, and Katara, the whole thing feels a bit dull. Luckily, Sokka and Suki come to visit and reintroduce some familiar faces from their wandering days. And while out and about to celebrate, Toph discovers something that just might put the sparkle back in her eye...<br> Written by Faith Erin Hicks (The Adventures of Superhero Girl, The Nameless City) and drawn by Peter Wartman (Stonebreaker), with colors by Adele Matera and collaboration from Avatar: The Last Airbender animated series writer Tim Hedrick, this is the ultimate continuation of the hit animated series!",
+        "stock" : 7
+    },
+    {
+        "no" : 9,
+        "id_book" : "B009",
+        "cover" : "../assets/book/B009.jpg",
+        "category" : "Romance",
+        "title" : "Viscount Who Loved Me, The (Bridgertons Book 2)",
+        "author" : "Julia Quinn",
+        "publisher" : "HarperCollins Publishers",
+        "year" : 2015,
+        "synopsis" : "From New York Times bestselling author Julia Quinn comes the second novel in the beloved Regency-set world of her charming, powerful Bridgerton family, now a series created by Shonda Rhimes for Netflix.<br>1814 promises to be another eventful season, but not, This Author believes, for Anthony Bridgerton, London's most elusive bachelor, who has shown no indication that he plans to marry. And in all truth, why should he? When it comes to playing the consummate rake, nobody does it better...                          --Lady Whistledown's Society Papers, April 1814<br>But this time the gossip columnists have it wrong. Anthony Bridgerton hasn't just decided to marry--he's even chosen a wife! The only obstacle is his intended's older sister, Kate Sheffield--the most meddlesome woman ever to grace a London ballroom. The spirited schemer is driving Anthony mad with her determination to stop the betrothal, but when he closes his eyes at night, Kate's the woman haunting his increasingly erotic dreams...<br>Contrary to popular belief, Kate is quite sure that reformed rakes do not make the best husbands--and Anthony Bridgerton is the most wicked rogue of them all. Kate's determined to protect her sister--but she fears her own heart is vulnerable. And when Anthony's lips touch hers, she's suddenly afraid she might not be able to resist the reprehensible rake herself...<br>This novel includes the 2nd epilogue, a peek at the story after the story.",
+        "stock" : 7
+    },
+    {
+        "no" : 10,
+        "id_book" : "B010",
+        "cover" : "../assets/book/B010.jpg",
+        "category" : "Romance",
+        "title" : "Forever Never",
+        "author" : "Lucy Score",
+        "publisher" : "Independently published",
+        "year" : 2020,
+        "synopsis" : "Under Brick Callan’s mile-wide chest beats a loyal heart with a few cracks in it. He’s the steadfast, overprotective type. Especially when it comes to the one woman he can never have. It’s a long, complicated history punctuated by fights, friendship, family, and an attraction that strains his iron willpower.<br>When Remi Ford returns to Mackinac Island in the dead of winter with a secret, Brick makes it his mission to find out what put the shadows in those green eyes. Even if it means breaking down the walls he’s built between them. Even if it means falling for the one girl he’ll never get over.<br>The free-spirited artist just needs to lay low for a few weeks so she can figure a way out of this nightmare. She’s definitely not staying. Not when the man who broke her teenage heart into splinters keeps showing up at her parents’ dinner table. Remi doesn’t need broody, bearded Brick riding to her rescue…again. Not when it will put them both in danger, costing them much more than their hearts.<br>Author’s Note: Frenemies-to-lovers. Opposites attract. Slow burn. Girl in danger. Glorious, glorious banter. Fighting as foreplay. Small-town shenanigans. Big, grumpy, pining, overprotective hero. Wild-child, trouble-finding heroine who keeps on pushing the hero’s buttons. Steam Level: Lava. Suspense: Nail-biting. Feels: Big time.",
+        "stock" : 10
     }
 ]
