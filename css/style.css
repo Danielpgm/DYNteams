@@ -137,6 +137,10 @@ a{
 .newBook{
     margin : 0px 180px;
 }
+
+.author{
+    font-size:10px;
+}
 /* footer */
 
 .contact{
