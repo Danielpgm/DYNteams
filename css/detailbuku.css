@@ -1,0 +1,50 @@
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+.book-title{
+    width: 300px;
+    height: 20px;
+    position: absolute;
+    top: 100px;
+    left: 40%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px ;
+}
+.back-cover{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+.container{
+    position: relative;
+}
+.backdrop{
+    width: 60%;
+    height: 300px;
+    background-color: rgb(122, 122, 122);
+    opacity: 0.2;
+    position: absolute;
+    top: 150px;
+    box-shadow: 5px 5px 15px 0px;
+
+}
+.mid-container{
+    width: 60%;
+    height: 500px;
+    /* background-color: rgb(114, 91, 91); */
+    position: absolute;
+    top: 150px;
+}
+.pic{
+    width: 180px;
+    height: 300px;
+    object-fit:contain;
+}
+.detail{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    top: 20%;
+    left: 33.3%;
+}
