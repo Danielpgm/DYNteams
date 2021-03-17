@@ -63,7 +63,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="login.html">
                         <i class="fa-fw fas fa-sign-out-alt"></i>
                         Log Out
                     </a>
@@ -80,9 +80,6 @@
 
                     <button type="button" id="sidebarCollapse" class="btn btn-light">
                         <span class="cursor">&#9776;</span>
-                    </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -107,7 +104,7 @@
                                 <tr>
                                     <th>No.</th>
                                     <th>ID&nbsp;Activity</th>
-                                    <th>ID&nbsp;Book</th>
+                                    <th>Title&nbsp;Book</th>
                                     <th>User</th>
                                     <th>Start&nbsp;Date</th>
                                     <th>Return&nbsp;Date</th>
@@ -118,7 +115,7 @@
                             <tfoot>
                                 <tr>
                                     <th>No.</th>
-                                    <th>ID&nbsp;Activity</th>
+                                    <th>Title&nbsp;Activity</th>
                                     <th>Book</th>
                                     <th>User</th>
                                     <th>Start&nbsp;Date</th>
@@ -127,56 +124,73 @@
                                     <th class="text-center">Action</th>
                                 </tr>
                             </tfoot>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>A001</td>
-                                    <td>Restoring Your Historic House: The Comprehensive Guide for Homeowners</td>
-                                    <td>Yona Astika</td>
-                                    <td>15/03/2021</td>
-                                    <td>22/03/2021</td>
-                                    <td class="text-center"><a href="#" type="button" class="badge badge-primary">In the Period</a></td>
-                                    <td class="text-center">
-                                        <a href="#" data-toggle="modal" data-target="#extend" class="badge badge-success text-uppercase"><i class="fas fa-plus-circle"></i>&nbsp;Extend</a><br />
-                                        <a href="#" data-toggle="modal" data-target="#return" class="badge badge-danger text-uppercase"><i class="fas fa-undo"></i>&nbsp;Return</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>A002</td>
-                                    <td>Restoring Your Historic House: The Comprehensive Guide for Homeowners</td>
-                                    <td>Yona Astika</td>
-                                    <td>15/03/2021</td>
-                                    <td>22/03/2021</td>
-                                    <td class="text-center">
-                                        <a href="#" type="button" class="badge badge-danger">Rp 2.400</a>
-                                        <label class="text-xs text-muted">3 days late</label>
-                                    </td>
-                                    <td class="text-center">
-                                        <a href="#" data-toggle="modal" data-target="#extend" class="badge badge-success text-uppercase"><i class="fas fa-plus-circle"></i>&nbsp;Extend</a><br />
-                                        <a href="#" data-toggle="modal" data-target="#return" class="badge badge-danger text-uppercase"><i class="fas fa-undo"></i>&nbsp;Return</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>A003</td>
-                                    <td>Restoring Your Historic House: The Comprehensive Guide for Homeowners</td>
-                                    <td>Yona Astika</td>
-                                    <td>15/03/2021</td>
-                                    <td>22/03/2021</td>
-                                    <td class="text-center"><a href="#" type="button" class="badge badge-primary">In the Period</a></td>
-                                    <td class="text-center">
-                                        <a href="#" data-toggle="modal" data-target="#extend" class="badge badge-success text-uppercase"><i class="fas fa-plus-circle"></i>&nbsp;Extend</a><br />
-                                        <a href="#" data-toggle="modal" data-target="#return" class="badge badge-danger text-uppercase"><i class="fas fa-undo"></i>&nbsp;Return</a>
-                                    </td>
-                                </tr>
+                            <tbody id="bodyTable-activity">
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-
         </div>
+    </div>
+
+    <div class="modal fade" id="extendModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <form action="activity.html">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title">Extend</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3 mt-2">
+                                    <label for="id_book" class="form-label">ID Activity</label>
+                                    <input type="text" class="form-control" id="id_activity" readonly>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3 mt-2">
+                                    <label for="title_book" class="form-label">Title Book</label>
+                                    <input type="text" class="form-control" id="title_book" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3 mt-2">
+                                    <label for="user" class="form-label">User</label>
+                                    <input type="text" class="form-control" id="user" readonly>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3 mt-2">
+                                    <label for="start_date" class="form-label">Start Date</label>
+                                    <input type="date" class="form-control" id="start_date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3 mt-2">
+                                    <label for="extend_date" class="form-label">Extend Date</label>
+                                    <input type="date" class="form-control" id="extend_date">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3 mt-2">
+                                    <label for="return_date" class="form-label">Return Date</label>
+                                    <input type="date" class="form-control" id="return_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success" onclick="Swal('Updated!', 'Data has been updated. ', 'success');">EXTEND</button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
@@ -204,5 +218,9 @@
 
     <!-- Page level custom scripts -->
     <script src="../js/demo/datatables-demo.js"></script>
+
+    <!-- sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/activity.js"></script>
 </body>
 </html>

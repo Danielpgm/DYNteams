@@ -63,7 +63,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="login.html">
                         <i class="fa-fw fas fa-sign-out-alt"></i>
                         Log Out
                     </a>
@@ -80,9 +80,6 @@
 
                     <button type="button" id="sidebarCollapse" class="btn btn-light">
                         <span class="cursor">&#9776;</span>
-                    </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -103,7 +100,7 @@
                 <div class="card-body">
                     <a href="addUser.html" class="btn btn-primary float-end mb-2">Add Data</a>
                     <div class="table-responsive">
-                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
                             <thead>
                                 <tr>
                                     <th>No.</th>
@@ -128,46 +125,7 @@
                                     <th class="text-center">Action</th>
                                 </tr>
                             </tfoot>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>U001</td>
-                                    <td>Daniel Paskalis</td>
-                                    <td>daniel@gmail.com</td>
-                                    <td>+6281256746632</td>
-                                    <td>Silver</td>
-                                    <td class="text-center"><a href="#" type="button" class="badge badge-primary">ACTIVE</a></td>
-                                    <td class="text-center">
-                                        <a href="#" data-toggle="modal" data-target="#resetPasswordModal" class="badge badge-warning text-uppercase"><i class="fas fa-key"></i>&nbsp;Reset Password</a><br />
-                                        <a href="#" class="badge badge-primary text-uppercase"><i class="fas fa-edit"></i>&nbsp;Edit Detail</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>U002</td>
-                                    <td>Yona Astika</td>
-                                    <td>yona@gmail.com</td>
-                                    <td>+62898765721</td>
-                                    <td>Gold</td>
-                                    <td class="text-center"><a href="#" type="button" class="badge badge-primary">ACTIVE</a></td>
-                                    <td class="text-center">
-                                        <a href="#" data-toggle="modal" data-target="#resetPasswordModal" class="badge badge-warning text-uppercase"><i class="fas fa-key"></i>&nbsp;Reset Password</a><br />
-                                        <a href="#" class="badge badge-primary text-uppercase"><i class="fas fa-edit"></i>&nbsp;Edit Detail</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>U003</td>
-                                    <td>Nazli Alvira Siregar</td>
-                                    <td>nazli@gmail.com</td>
-                                    <td>+62890876677</td>
-                                    <td>Silver</td>
-                                    <td class="text-center"><a href="#" type="button" class="badge badge-danger">DEACTIVE</a></td>
-                                    <td class="text-center">
-                                        <a href="#" data-toggle="modal" data-target="#resetPasswordModal" class="badge badge-warning text-uppercase"><i class="fas fa-key"></i>&nbsp;Reset Password</a><br />
-                                        <a href="#" class="badge badge-primary text-uppercase"><i class="fas fa-edit"></i>&nbsp;Edit Detail</a>
-                                    </td>
-                                </tr>
+                            <tbody id="bodyTable-user">
                             </tbody>
                         </table>
                     </div>
@@ -175,6 +133,73 @@
             </div>
 
         </div>
+    </div>
+
+    <div class="modal fade" id="editUserModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <form action="user.html">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title">Edit Data</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3 mt-2">
+                                    <label for="id_book" class="form-label">ID User</label>
+                                    <input type="text" class="form-control" id="id_user" readonly>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3 mt-2">
+                                    <label for="status" class="form-label">Status</label>
+                                    <select id="status" class="form-select" aria-label="status">
+                                        <option value="Active">Active</option>
+                                        <option value="Deactive">Deactive</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3 mt-2">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3 mt-2">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3 mt-2">
+                                    <label for="phone_number" class="form-label">Phone Number</label>
+                                    <input type="text" class="form-control" id="phone_number">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3 mt-2">
+                                    <label for="member" class="form-label">Member</label>
+                                    <select id="member" class="form-select" aria-label="member">
+                                        <option value="Gold">Gold</option>
+                                        <option value="Platinum">Platinum</option>
+                                        <option value="Silver">Silver</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success" onclick="Swal('Updated!', 'Data has been updated. ', 'success');">EDIT</button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
@@ -202,5 +227,8 @@
 
     <!-- Page level custom scripts -->
     <script src="../js/demo/datatables-demo.js"></script>
+    <!-- sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/user.js"></script>
 </body>
 </html>
