@@ -1,0 +1,156 @@
+/* Navbar Style */
+header{
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-container{
+    background-color: whitesmoke;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: fixed;
+    overflow: hidden;
+    top:0;
+    width: 100%;
+    z-index: 3;
+}
+
+.overlayNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlayNav-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlayNav a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Nunito Sans';
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlayNav a:hover, .overlayNav a:focus {
+    color: #2e2d2d;
+}
+
+.overlayNav .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
+}
+
+.cursor{
+    font-size:25px;
+    cursor:pointer; 
+    float:right; 
+    margin-right: 1%;
+    order:3;
+    color: black;
+}
+
+.logo1{
+    order:1;
+}
+
+.logo1 .logo{
+    width: 30px;
+    height: auto;
+    margin-top: -5%;
+}
+
+.akun{
+    order:2;
+}
+
+.akun .btnLogin{
+    width: 100%;
+    height: auto;
+}
+/* end navbar */
+
+.content{
+    margin: 0; /* untuk menghilangkan margin pada content*/
+    padding: 0; /*menghilangkan padding*/
+    position: relative;
+}
+.object-cover{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.back-cover{
+    background-color: rgb(255, 240, 240);
+    width: 60%;
+    height: 480px;
+    opacity: 0.3;
+    margin-top: 20px;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 10px 8px 0px;
+}
+.main-content{
+    width: 60%;
+    height: 400px;
+    margin-top: 20px;
+    padding-left: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+}
+.img-card{
+    height: 160px;
+    width: auto;
+    object-fit:cover;
+    box-shadow: 5px 1px 20px 1px black;
+}
+
+/* end main */
+
+/* footer */
+
+.contact{
+    background-image: url("../assets/contactBg.png");
+    height: 150px;
+}
+
+.containerFooter{
+    height: 30px;
+    font-size: 12px;
+    background-color: #f0f0f0;
+    color: rgb(83, 81, 81);
+}
+/* end footer */
