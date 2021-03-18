@@ -571,51 +571,27 @@ a{
     font-size:13px;
     margin-bottom:0;
   }
-
-
+  /* collapsible */
   .collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .content-collapsible {
+    padding: 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
 
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
-.content-collapsible {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
-
-/* collapsible */
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
-.content-collapsible {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
