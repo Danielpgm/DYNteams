@@ -9,6 +9,7 @@ fetch('../book.json')
     
 function getBook(data) {
     let output = "";
+    let popular = "";
     
     data.forEach((element) => {
         if((element.no) < 7){
@@ -26,7 +27,8 @@ function getBook(data) {
         }
     
     });
-    
-    const bodyTable = document.getElementById("recommended");
+
+    const bodyTable = document.getElementById('recommended');
     bodyTable.innerHTML = output;
+    
 }
