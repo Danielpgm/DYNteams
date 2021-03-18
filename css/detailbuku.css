@@ -1,4 +1,4 @@
-/* Navbar Style */
+/* header */
 header{
     background-color: whitesmoke;
     margin-bottom: 20px;
@@ -93,55 +93,57 @@ a{
 }
 /* end navbar */
 
-.content{
-    margin: 0; /* untuk menghilangkan margin pada content*/
-    padding: 0; /*menghilangkan padding*/
-    position: relative;
-}
-.object-cover{
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-}
-.back-cover{
-    background-color: rgb(255, 240, 240);
-    width: 60%;
-    height: 480px;
-    opacity: 0.3;
-    margin-top: 20px;
-    position: absolute;
-    top: 48%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 1px 10px 8px 0px;
-}
-.main-content{
-    width: 60%;
-    height: 400px;
-    margin-top: 20px;
-    padding-left: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.card{
-    width: 20px;
-    height: 20px;
+.container-fluid{
     margin: 0;
     padding: 0;
 }
-.img-card{
-    height: 160px;
-    width: auto;
-    object-fit:cover;
-    box-shadow: 5px 1px 20px 1px black;
+.book-title{
+    width: 300px;
+    height: 20px;
+    position: absolute;
+    top: 100px;
+    left: 40%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px ;
 }
+.back-cover{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+.container{
+    position: relative;
+}
+.backdrop{
+    width: 60%;
+    height: 300px;
+    background-color: rgb(122, 122, 122);
+    opacity: 0.2;
+    position: absolute;
+    top: 150px;
+    box-shadow: 5px 5px 15px 0px;
 
-/* end main */
-
+}
+.mid-container{
+    width: 60%;
+    height: 500px;
+    /* background-color: rgb(114, 91, 91); */
+    position: absolute;
+    top: 150px;
+}
+.pic{
+    width: 180px;
+    height: 300px;
+    object-fit:contain;
+}
+.detail{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    top: 20%;
+    left: 33.3%;
+}
 /* footer */
-
 .contact{
     background-image: url("../assets/contactBg.png");
     height: 150px;
@@ -153,4 +155,3 @@ a{
     background-color: #f0f0f0;
     color: rgb(83, 81, 81);
 }
-/* end footer */
