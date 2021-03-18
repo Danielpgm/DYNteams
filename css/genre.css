@@ -105,24 +105,23 @@ a{
 }
 .back-cover{
     background-color: rgb(255, 240, 240);
-    width: 63.5%;
+    width: 70%;
     height: 530px;
     opacity: 0.3;
     margin-top: 20px;
     position: absolute;
-    top: 48%;
-    left: 49%;
+    top: 53%;
+    left: 51%;
     transform: translate(-50%, -50%);
     box-shadow: 1px 10px 8px 0px;
 }
 .main-content{
-    /* background-color: #2e2d2d; */
-    width: 64%;
+    width: 70%;
     height: 530px;
     margin-top: 20px;
     padding-left: 10px;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -140,6 +139,13 @@ a{
 }
 .card-body{
     width: 100px;
+}
+
+.searchBtn {
+    width: 300px;
+    position: absolute;
+    top: 80px;
+    left: 88%;
 }
 
 /* end main */
