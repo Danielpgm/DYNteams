@@ -29,25 +29,33 @@
             </div>
 
             <ul class="list-unstyled components">
-                <li class="active">
+                <li>
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="fa-fw fas fa-server"></i>
-                        Kelola Data
+                        Log Data
                     </a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="index.html">Data Buku</a>
+                            <a href="index.html">Manage Books</a>
                         </li>
                         <li>
-                            <a href="user.html">Data User</a>
+                            <a href="user.html">Manage Users</a>
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a href="activity.html">
+                <li class="active">
+                    <a href="#activitySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="fa-fw fas fa-chart-line"></i>
-                        Aktivitas
+                        Activities
                     </a>
+                    <ul class="collapse list-unstyled" id="activitySubmenu">
+                        <li>
+                            <a href="waitingConfirm.html">Waiting Confirm</a>
+                        </li>
+                        <li>
+                            <a href="activity.html">On Progress</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="history.html">
@@ -58,7 +66,7 @@
                 <li>
                     <a href="manageRole.html">
                         <i class="fa-fw fas fa-user-friends"></i>
-                        Pengguna Sistem
+                        Manage Admin
                     </a>
                 </li>
                 <li>
@@ -91,7 +99,6 @@
                 </div>
             </nav>
 
-            <!-- DataTales Example -->
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
                     <h6 class="m-0 font-weight-bold text-dark">Manage Books</h6>
@@ -226,7 +233,6 @@
                 $('#sidebar').toggleClass('active');
             });
         });
-        
     </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>

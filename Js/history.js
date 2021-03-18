@@ -12,7 +12,7 @@ function getActivity(data) {
     
     data.forEach((element) => {
 
-        if((element.confirm) === 1){
+        if((element.return) === 1){
             output += `
             <tr>
                 <td>${element.no}</td>
@@ -21,13 +21,9 @@ function getActivity(data) {
                 <td>${element.user}</td>
                 <td>${element.start_date}</td>
                 <td>${element.return_date}</td>
+                <td class="text-center">Rp ${element.fine * 800}</td>
                 <td class="text-center">
-                    <a href="#" type="button" class="badge badge-danger">Rp ${element.fine*800}</a>
-                    <label class="text-xs text-muted">${element.status}</label>
-                </td>
-                <td class="text-center">
-                    <a href="#" data-toggle="modal" data-target="#extendModal" onclick="extend('${element.no-1}')" class="badge badge-success text-uppercase"><i class="fas fa-plus-circle"></i>&nbsp;Extend</a><br />
-                    <a href="#" data-toggle="modal" data-target="#return" onclick="returnBook('${element.no-1}')" class="badge badge-danger text-uppercase"><i class="fas fa-undo"></i>&nbsp;Return</a>
+                    <a href="#" class="badge badge-primary">${element.status}</a>
                 </td>
             </tr>
             `;
@@ -35,7 +31,7 @@ function getActivity(data) {
     
     });
     
-    const bodyTable = document.getElementById("bodyTable-activity");
+    const bodyTable = document.getElementById("bodyTable-history");
     bodyTable.innerHTML = output;
 }
 
