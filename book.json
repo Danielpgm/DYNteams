@@ -118,5 +118,164 @@
         "year" : 2020,
         "synopsis" : "Under Brick Callan’s mile-wide chest beats a loyal heart with a few cracks in it. He’s the steadfast, overprotective type. Especially when it comes to the one woman he can never have. It’s a long, complicated history punctuated by fights, friendship, family, and an attraction that strains his iron willpower.\nWhen Remi Ford returns to Mackinac Island in the dead of winter with a secret, Brick makes it his mission to find out what put the shadows in those green eyes. Even if it means breaking down the walls he’s built between them. Even if it means falling for the one girl he’ll never get over.\nThe free-spirited artist just needs to lay low for a few weeks so she can figure a way out of this nightmare. She’s definitely not staying. Not when the man who broke her teenage heart into splinters keeps showing up at her parents’ dinner table. Remi doesn’t need broody, bearded Brick riding to her rescue…again. Not when it will put them both in danger, costing them much more than their hearts.\nAuthor’s Note: Frenemies-to-lovers. Opposites attract. Slow burn. Girl in danger. Glorious, glorious banter. Fighting as foreplay. Small-town shenanigans. Big, grumpy, pining, overprotective hero. Wild-child, trouble-finding heroine who keeps on pushing the hero’s buttons. Steam Level: Lava. Suspense: Nail-biting. Feels: Big time.",
         "stock" : 10
+    },
+    {
+        "no" : 11,
+        "id_book" : "B011",
+        "cover" : "../assets/book/B011.jpg",
+        "category" : "Philosofy",
+        "title" : "Filosofi Teras",
+        "author" : "Henry Manampiring",
+        "publisher" : "Kompas",
+        "year" : 2008,
+        "synopsis" : "Lebih dari 2000 tahun lalu, sebuah mazhab filsafat menemukan akar masalah dan juga solusi dari banyak emosi negatif. Stoisisme, atau Filosofi Teras, adalah filsafat Yunani-Romawi kuno yang bisa membantu kita mengatasi emosi negatif dan menghasilkan mental yang tangguh dalam menghadapi naik-turun nya kehidupan.Jauh dari kesan filsafat sebagai topik berat dan mengawang-awang, Filosofi Teras justru bersifat praktis dan relevan dengan kehidupan Generasi Milenial dan Gen-Z masa kini.",
+        "stock" : 5 
+    },
+    {
+        "no" : 12,
+        "id_book" : "B012",
+        "cover" : "../assets/book/B012.jpg",
+        "category" : "Law",
+        "title" : "Pengantar Hukum Indonesia",
+        "author" : "Teguh PrasetYo",
+        "publisher" : "Pt.rajagrafindo Persada",
+        "year" : 2021,
+        "synopsis" : "Buku mengenai Pengantar Hukum Indonesia yang ada di publik sudah cukup banyak. Namun, buku Pengantar Hukum Indonesia yang berada di tangan pembaca ini merupakan suatu buku pengantar ke dalam hukum Indonesia yang unik dengan pendekatan baru bagi mahasiswa/i dan juga masyarakat umum yang meminati ilmu dan pengetahuan hukum agar nantinya dapat memasuki studi yang lebih mendalam pada ilmu hukum.",
+        "stock" : 7
+    },
+    {
+        "no" : 13,
+        "id_book" : "B013",
+        "cover" : "../assets/book/B013.jpg",
+        "category" : "Law",
+        "title" : "Viktimologi",
+        "author" : "Mahrus Ali",
+        "publisher" : "Pt.rajagrafindo Persada",
+        "year" : 2021,
+        "synopsis" : "Buku mengenai Pengantar Hukum Indonesia yang ada di publik sudah cukup banyak. Namun, buku Pengantar Hukum Indonesia yang berada di tangan pembaca ini merupakan suatu buku pengantar ke dalam hukum Indonesia yang unik dengan pendekatan baru bagi mahasiswa/i dan juga masyarakat umum yang meminati ilmu dan pengetahuan hukum agar nantinya dapat memasuki studi yang lebih mendalam pada ilmu hukum.",
+        "stock" : 7
+    },
+    {
+        "no" : 14,
+        "id_book" : "B014",
+        "cover" : "../assets/book/B014.jpg",
+        "category" : "Law",
+        "title" : "Penjara Swasta",
+        "author" : "Sani Imam Santoso",
+        "publisher" : "Saberro Inti Persada",
+        "year" : 2021,
+        "synopsis" : "Di dalam Teori Kritis yang diungkapkan dan ditulis para Filsof dari Jerman yang akhirnya hanya menelurkan suatu bentuk pesimisme. maka Jurgens Habermas yang mengungkapkan bahwa ternyata teori itu bisa menghasilkan optimisme dimana ditemukan Sektor Privatisasi (Swasta) bisa bergabung menjadi optimis dengan dunia sektor Publik yang terjemahannya adalah dimungkinkannya Sektor Publik (Pemerintah)menjadi Sektor Privat.",
+        "stock" : 2
+    },
+    {
+        "no" : 15,
+        "id_book" : "B015",
+        "cover" : "../assets/book/B015.jpg",
+        "category" : "Law",
+        "title" : "Uji Tuntas Hukum (Legal Due Diligence)",
+        "author" : "Dr. Rio Christiawan, S.H., M.Hum.,M.Kn.",
+        "publisher" : "Sinar Grafika",
+        "year" : 2021,
+        "synopsis" : "Proses uji tuntas hukum dimaksudkan untuk mencapai sebuah transaksi yang bersifat 'clear and clean' bagi para pihak.salah satunya berarti bahwa para pihak mengetahui segala aspek yang melekat pada transaksi yang akan dilakukan,termasuk didalamnya adalah risiko hukum yang potensial timbul maupun risiko yang akan ditanggung oleh masing-masing pihak yang akan melakukan transaksi.",
+        "stock" : 6
+    },
+    {
+        "no" : 15,
+        "id_book" : "B016",
+        "cover" : "../assets/book/B016.jpg",
+        "category" : "Law",
+        "title" : "Hukum Keperdataan",
+        "author" : "Zaeni Asyhadie",
+        "publisher" : "RajaGrafindo Persada",
+        "year" : 2020,
+        "synopsis" : "Hukum Keperdataan memang merupakan hukum privat yang “mengatur” hubungan antara subjek hukum yang satu dengan subjek hukum lainnya, malah “mengatur” pula hubungan antara subjek hukum dengan objek hukum. Hubungan-hubungan ini bisa menimbulkan akibat hukum yang sudah diatur dalam Hukum Nasional, Hukum Adat, dan Hukum Positif yang berlaku di Indonesia.",
+        "stock" : 6
+    },
+    {
+        "no" : 17,
+        "id_book" : "B017",
+        "cover" : "../assets/book/B017.jpg",
+        "category" : "Law",
+        "title" : "Hukum Hak Tanggungan",
+        "author" : "Arba, Muhammad Amin Suma",
+        "publisher" : "RajaGrafindo Persada",
+        "year" : 2020,
+        "synopsis" : "Undang-Undang Nomor 5 Tahun 1960 tentang Peraturan Dasar Pokok-Pokok Agraria yang dikenal dengan UUPA menentukan dalam Pasal 25, 33 dan 39, yaitu: Hak Milik, Hak Guna Usaha; dan Hak Guna Bangunan ditunjuk sebagai objek Hak Tanggungan, serta Pasal 51 menentukan Hak tanggungan yang dapat dibebankan pada hak milik, hak guna usaha dan hak guna bangunan tersebut diatur dengan undang-undang.",
+        "stock" : 6
+    },
+    {
+        "no" : 18,
+        "id_book" : "B018",
+        "cover" : "../assets/book/B018.jpg",
+        "category" : "Law",
+        "title" : "Politik Hukum Konteporer",
+        "author" : "Rio Christiawan",
+        "publisher" : "RajaGrafindo Persada",
+        "year" : 2020,
+        "synopsis" : "Perubahan kebijakan hukum yang disebabkan oleh adanya pandemi Covid-19 tidak saja berdampak sementara waktu, tetapi normal baru yang dilahirkan akan dirasakan oleh masyarakat dalam jangka waktu yang lama.",
+        "stock" : 6
+    },
+    {
+        "no" : 19,
+        "id_book" : "B019",
+        "cover" : "../assets/book/B019.jpg",
+        "category" : "Religion",
+        "title" : "Alkitab",
+        "author" : "LAI",
+        "publisher" : "LAI",
+        "year" : 2021,
+        "synopsis" : "Alkitab berukuran besar yang dikemas dengan cover model agenda bermotif burung. Cover Alkitab menggunakan bahan lembut, dengan kancing magnet, tulisan Alkitab dibordir dan pinggiran berwarna, sehingga semakin mempercantik tampilannya. Alkitab ini juga dilengkapi dengan indeks untuk mempermudah mencari kitab.",
+        "stock" : 6
+    },
+    {
+        "no" : 20,
+        "id_book" : "B020",
+        "cover" : "../assets/book/B020.jpg",
+        "category" : "Religion",
+        "title" : "Menjadi Kekasih Al-Quran",
+        "author" : "Atina Balqis Izzah, LC, MA",
+        "publisher" : "Elex Media Komputindo",
+        "year" : 2021,
+        "synopsis" : "15 tahun berkutat dalam dunia menghafal Al-Qur’an, penulis sadar bahwa proses menghafal maupun menjaga hafalan Al-Qur’an adalah tidak mudah. Akan tetapi dengan modal mencintai Al-Qur’an, insya Allah bisa menjaga seseorang agar terus istikamah sampai akhir hidup mengemban amanah menjadi seorang hâmilul Qur’an.",
+        "stock" : 6
+    },
+    {
+        "no" : 21,
+        "id_book" : "B021",
+        "cover" : "../assets/book/B021.jpg",
+        "category" : "Religion",
+        "title" : "Saat Teduh Kecil Mar - Apr",
+        "author" : "-",
+        "publisher" : "Gunung Mulia Bpk",
+        "year" : 2021,
+        "synopsis" : "Saat Teduh Kecil Mar - Apr 2021.",
+        "stock" : 6
+    },
+    {
+        "no" : 22,
+        "id_book" : "B022",
+        "cover" : "../assets/book/B022.jpg",
+        "category" : "Religion",
+        "title" : "Hidup Minimalis Ala Rasulullah",
+        "author" : "Ratna Latifah",
+        "publisher" : "Syalmahat Publishing",
+        "year" : 2021,
+        "synopsis" : "Meneladani perilaku dan sikap Rasulullah Saw. merupakan salah satu langkah untuk menjalani kehidupan dengan sebaik-baiknya Rasulullah Saw.",
+        "stock" : 6
+    },
+    {
+        "no" : 23,
+        "id_book" : "B023",
+        "cover" : "../assets/book/B023.jpg",
+        "category" : "Religion",
+        "title" : "Hidup Minimalis Ala Rasulullah",
+        "author" : "Ratna Latifah",
+        "publisher" : "Syalmahat Publishing",
+        "year" : 2021,
+        "synopsis" : "Meneladani perilaku dan sikap Rasulullah Saw. merupakan salah satu langkah untuk menjalani kehidupan dengan sebaik-baiknya Rasulullah Saw.",
+        "stock" : 6
     }
+    
+    
+    
 ]
