@@ -48,11 +48,8 @@ function getBook(data) {
     const carouselPopular = document.getElementById('owlCarousel');
     carouselPopular.innerHTML = popular;
 
-    const carouselComputer = document.getElementById('owlCarouselComputer');
-    carouselComputer.innerHTML = popular;
-
-    var owl = $('.owl-carousel');
-        owl.owlCarousel({
+    var p = $('.owl-carousel');
+        p.owlCarousel({
             margin: 10,
             loop: true,
             responsive: {
