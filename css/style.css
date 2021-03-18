@@ -256,6 +256,10 @@ a{
 
 /* catalogue */
 
+.genre{
+  font-size: 14px;
+}
+
 .test1{
   width: 100%;
 }
