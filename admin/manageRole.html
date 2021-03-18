@@ -30,25 +30,33 @@
             </div>
 
             <ul class="list-unstyled components">
-                <li class="active">
+                <li>
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="fa-fw fas fa-server"></i>
-                        Kelola Data
+                        Log Data
                     </a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="index.html">Data Buku</a>
+                            <a href="index.html">Manage Books</a>
                         </li>
                         <li>
-                            <a href="user.html">Data User</a>
+                            <a href="user.html">Manage Users</a>
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a href="activity.html">
+                <li class="active">
+                    <a href="#activitySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="fa-fw fas fa-chart-line"></i>
-                        Aktivitas
+                        Activities
                     </a>
+                    <ul class="collapse list-unstyled" id="activitySubmenu">
+                        <li>
+                            <a href="waitingConfirm.html">Waiting Confirm</a>
+                        </li>
+                        <li>
+                            <a href="activity.html">On Progress</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="history.html">
@@ -59,11 +67,11 @@
                 <li>
                     <a href="manageRole.html">
                         <i class="fa-fw fas fa-user-friends"></i>
-                        Pengguna Sistem
+                        Manage Admin
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../loginadmin.html">
                         <i class="fa-fw fas fa-sign-out-alt"></i>
                         Log Out
                     </a>
@@ -81,14 +89,11 @@
                     <button type="button" id="sidebarCollapse" class="btn btn-light">
                         <span class="cursor">&#9776;</span>
                     </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link text-muted" href="profile.html"><i class="fa-fw fas fa-user text-muted"></i>&nbsp;Administrator</a>
+                                <a class="nav-link text-muted" href="#"><i class="fa-fw fas fa-user text-muted"></i>&nbsp;Administrator</a>
                             </li>
                         </ul>
                     </div>
@@ -110,7 +115,6 @@
                                     <th>Username</th>
                                     <th>Level</th>
                                     <th>Status</th>
-                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tfoot>
@@ -120,7 +124,6 @@
                                     <th>Username</th>
                                     <th>Level</th>
                                     <th>Status</th>
-                                    <th>Action</th>
                                 </tr>
                             </tfoot>
                             <tbody>
@@ -132,32 +135,14 @@
                                     <td>
                                         <a href="#" type="button" class="badge badge-primary">ACTIVE</a>
                                     </td>
-                                    <td class="text-center">
-                                        <a href="#" data-toggle="modal" data-target="#resetPasswordModal" class="badge badge-warning text-uppercase"><i class="fas fa-key"></i>&nbsp;Reset Password</a>
-                                    </td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
                                     <td>02</td>
-                                    <td>Nazli</td>
+                                    <td>Officer</td>
                                     <td>Officer</td>
                                     <td>
                                         <a href="#" type="button" class="badge badge-primary">ACTIVE</a>
-                                    </td>
-                                    <td class="text-center">
-                                        <a href="#" data-toggle="modal" data-target="#resetPasswordModal" class="badge badge-warning text-uppercase"><i class="fas fa-key"></i>&nbsp;Reset Password</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>03</td>
-                                    <td>Alvira</td>
-                                    <td>Officer</td>
-                                    <td>
-                                        <a href="#" type="button" class="badge badge-danger">DEACTIVE</a>
-                                    </td>
-                                    <td class="text-center">
-                                        <a href="#" data-toggle="modal" data-target="#resetPasswordModal" class="badge badge-warning text-uppercase"><i class="fas fa-key"></i>&nbsp;Reset Password</a>
                                     </td>
                                 </tr>
                             </tbody>

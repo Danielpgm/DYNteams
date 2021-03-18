@@ -9,127 +9,47 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans">
     <link rel="stylesheet" href="css/style.css">
-    <title>DYTeam</title>
+    <title>DYNTeam</title>
 </head>
 <body>
-    <header id="profilePage">
-
-        <div class="nav-container" id="navbar2">
-    
-            <div id="myNav" class="overlayNav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlayNav-content">
-                    <a href="index.html">Home</a>
-                    <a href="catalogue.html">Catalogue</a>
-                    <a href="location.html">Location</a>
-                    <a href="#profilePage" onclick="closeNav()">Profile</a>
-                </div>
-            </div>
-    
-            <span class="cursor" onclick="openNav()">&#9776;</span>
-    
-            <div class="logo1">
-                <img src="assets/logoBook.png" alt="logo library" class="logo">
-            </div>
-    
-            <a class="akun" href="#">
-                <button type="button" class="btn btn-light btnLogin">Nazli Alvira Siregar</button>
-            </a>
-    
-        </div>
-    
-    </header>
-
-    <div class="container" style="background-color: rgba(0, 0, 0, 0.459);">
-        <div class="row">
-                 <div class="col-md-6 col">
+    <div class="card shadow mx-5 my-5" style="height: 600px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col bg-light justify-content-center">
                     <div class="container-login" style="width: max-content; height: max-content;">
                         <img src="assets/Logo.png"><br>
-                        <a button type="button" class="btn btn-success" href="login.html" style="width: 250px;height: 60px;" >Sign in</button></a> <br>
-                        <a button type="button" class="btn btn-success" href="regist.html" style="width: 250px;height: 60px; margin-top: 50px;"  >Sign up</button></a>
-                        
-                       
-                      </div>
-                    
-
-                 </div>
-
-                 <div class="col-md-6 col" style="padding: 20px;">
-
-                    <div class="card" id="formlogin" style="height: 500px; color: rgb(0, 0, 0);">
+                        <label for="login" class="fw-bold text-center">Sudah punya akun?</label><br>
+                        <a button type="button" class="btn btn-outline-success my-3" href="login.html" style="width: 250px;height: auto" >Log in</button></a> <br>
+                    </div> 
+    
+                </div>
+    
+                <div class="col-md-6 col">
+                    <div class="card mb-5" id="formlogin" style="height: auto;">
                         <div class="card-body">
-                          <h2 class="card-title">REGISTRASI</h2>
-                                      
-                          <form>
-                            <div class="form-group">
-                              <label>Nama Lengkap</label>
-                              <input type="email" class="form-control" id="name">
-                              <label>Email</label>
-                              <input type="email" class="form-control" id="name">
-                              <label>Password</label>
-                              <input type="email" class="form-control" id="name">
-                              <label>Konfirmasi Password</label>
-                              <input type="email" class="form-control" id="name">
-                              <label>Alamat</label>
-                              <input type="email" class="form-control" id="name">
-                              <button type="button" class="btn btn-success" style="margin-top: 20px; align-items: center;">Regist</button>
-                            </div>
-                            
-                            
-                            
-                          </form>
-                          
+                            <h2 class="card-title text-center">REGISTRASI</h2>           
+                            <form action="login.html">
+                                <div class="form-group">
+                                    <label>Nama Lengkap</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                    <label>Password</label>
+                                    <input type="password" class="form-control" id="password" required>
+                                    <label>Konfirmasi Password</label>
+                                    <input type="password" class="form-control" id="password2" required>
+                                    <label>Alamat</label>
+                                    <input type="text" class="form-control" id="alamat" required>
+                                    <button type="submit" class="btn btn-success mt-3" style="width: 100%;">Sign Up</button>
+                                </div>
+                            </form>
                         </div>
-                      </div>
-                     
-                     
-
-                 </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
     
-
-    
-
-    <footer class="footer">
-        <div class="contact">
-            <div class="container">
-                
-            </div>
-        </div>
-        <div class="containerFooter justify-content-center">
-            <div class="copyright text-center">
-                <span>Copyright &copy; DYNTeam 2021</span>
-            </div>
-        </div>
-    </footer>
-
-        
-
-    <script>
-        // navbar javascript
-        function openNav() {
-            document.getElementById("myNav").style.width = "100%";
-        }
-        
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-        }
-    
-        window.onscroll = function() {scrollFunction()};
-    
-        function scrollFunction() {
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                document.getElementById("navbar2").style.backgroundColor = "#ffffff";
-                document.getElementsByClassName("cursor")[0].style.color = "#000000";
-            }
-            else{
-                document.getElementById("navbar2").style.backgroundColor = "whitesmoke";
-                document.getElementsByClassName("cursor")[0].style.color = "#000000";
-            }
-        }
-    </script>
 
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>

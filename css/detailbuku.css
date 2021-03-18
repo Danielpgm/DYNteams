@@ -1,0 +1,157 @@
+/* header */
+header{
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-container{
+    background-color: whitesmoke;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: fixed;
+    overflow: hidden;
+    top:0;
+    width: 100%;
+    z-index: 3;
+}
+
+.overlayNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlayNav-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlayNav a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Nunito Sans';
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlayNav a:hover, .overlayNav a:focus {
+    color: #2e2d2d;
+}
+
+.overlayNav .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
+}
+
+.cursor{
+    font-size:25px;
+    cursor:pointer; 
+    float:right; 
+    margin-right: 1%;
+    order:3;
+    color: black;
+}
+
+.logo1{
+    order:1;
+}
+
+.logo1 .logo{
+    width: 30px;
+    height: auto;
+    margin-top: -5%;
+}
+
+.akun{
+    order:2;
+}
+
+.akun .btnLogin{
+    width: 100%;
+    height: auto;
+}
+/* end navbar */
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+.book-title{
+    width: 300px;
+    height: 20px;
+    position: absolute;
+    top: 100px;
+    left: 40%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px ;
+}
+.back-cover{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+.container{
+    position: relative;
+}
+.backdrop{
+    width: 60%;
+    height: 300px;
+    background-color: rgb(122, 122, 122);
+    opacity: 0.2;
+    position: absolute;
+    top: 150px;
+    box-shadow: 5px 5px 15px 0px;
+
+}
+.mid-container{
+    width: 60%;
+    height: 500px;
+    /* background-color: rgb(114, 91, 91); */
+    position: absolute;
+    top: 150px;
+}
+.pic{
+    width: 180px;
+    height: 300px;
+    object-fit:contain;
+}
+.detail{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    top: 20%;
+    left: 33.3%;
+}
+/* footer */
+.contact{
+    background-image: url("../assets/contactBg.png");
+    height: 150px;
+}
+
+.containerFooter{
+    height: 30px;
+    font-size: 12px;
+    background-color: #f0f0f0;
+    color: rgb(83, 81, 81);
+}

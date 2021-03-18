@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
-    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
@@ -30,25 +29,33 @@
             </div>
 
             <ul class="list-unstyled components">
-                <li class="active">
+                <li>
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="fa-fw fas fa-server"></i>
-                        Kelola Data
+                        Log Data
                     </a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="index.html">Data Buku</a>
+                            <a href="index.html">Manage Books</a>
                         </li>
                         <li>
-                            <a href="user.html">Data User</a>
+                            <a href="user.html">Manage Users</a>
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a href="activity.html">
+                <li class="active">
+                    <a href="#activitySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="fa-fw fas fa-chart-line"></i>
-                        Aktivitas
+                        Activities
                     </a>
+                    <ul class="collapse list-unstyled" id="activitySubmenu">
+                        <li>
+                            <a href="waitingConfirm.html">Waiting Confirm</a>
+                        </li>
+                        <li>
+                            <a href="activity.html">On Progress</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="history.html">
@@ -59,11 +66,11 @@
                 <li>
                     <a href="manageRole.html">
                         <i class="fa-fw fas fa-user-friends"></i>
-                        Pengguna Sistem
+                        Manage Admin
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../loginadmin.html">
                         <i class="fa-fw fas fa-sign-out-alt"></i>
                         Log Out
                     </a>
@@ -81,26 +88,25 @@
                     <button type="button" id="sidebarCollapse" class="btn btn-light">
                         <span class="cursor">&#9776;</span>
                     </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link text-muted" href="profile.html"><i class="fa-fw fas fa-user text-muted"></i>&nbsp;Administrator</a>
+                                <a class="nav-link text-muted" href="#"><i class="fa-fw fas fa-user text-muted"></i>&nbsp;Administrator</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
 
-            <!-- DataTales Example -->
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
                     <h6 class="m-0 font-weight-bold text-dark">Manage Books</h6>
                 </div>
                 <div class="card-body">
+                    <div class="row" id="tes">
+
+                    </div>
                     <a href="addBook.html" class="btn btn-primary float-end mb-2">Add Data</a>
                     <div class="table-responsive">
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -134,356 +140,84 @@
                                     <th class="text-center">Action</th>
                                 </tr>
                             </tfoot>
-                            <tbody>
-                                <tr>
-                                    <td class="text-center">1</td>
-                                    <td>B001</td>
-                                    <td><img src="../assets/book/B001.jpeg" alt="" class="img-thumbnail" style="width: 100px; height: auto;"></td>
-                                    <td>Novel</td>
-                                    <td>Jalan Panjang untuk Pulang</td>
-                                    <td>Agustinus Wibowo</td>
-                                    <td>Gramedia</td>
-                                    <td>2021</td>
-                                    <td><p class="synopsis text-muted">Dalam sebagian besar tulisannya, dia membawa serta para pembacanya pada pencarian identitas berupa perjalanan untuk mencari makna “rumah”. Tempat-tempat yang dikunjungi Agustinus bukanlah tempat-tempat yang nyaman, tenang, atau bahkan indah dalam kacamata tamasya. Tempat-tempat itu sering kali berada di perbatasan, di wilayah penuh konflik berlapis dengan masyarakat yang berupaya mencari atau mempertahankan identitas. Dari tempat-tempat ini, kita bisa mendapatkan refleksi yang sesuai dengan kegelisahan kita, juga pertanyaan-pertanyaan yang berkecamuk dalam benak kita dan terus relevan dari masa ke masa. Yaitu pertanyaan tentang identitas diri. Ini adalah pertanyaan yang justru semakin menguat di tengah dunia yang semakin mengglobal. Jalan Panjang untuk Pulang adalah kumpulan cerita dan esai dari berbagai lokasi yang pernah disinggahi Agustinus, yang mengajak kita untuk mengalami berbagai dimensi perjalanan. Dari perjalanan fisik hingga perjalanan batin. Dari melihat dunia luar hingga pulang ke dalam diri. Dari pencarian hingga penemuan makna yang hakiki.</p></td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">
-                                        <a data-bs-toggle="modal" data-bs-target="#editModal"><img src="../assets/edit2.png" alt="" style="width: 25px;"></a>
-                                        <a data-bs-toggle="modal" data-bs-target="#deleteModal"><img src="../assets/delete.png" alt="" style="width: 25px;"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">2</td>
-                                    <td>B002</td>
-                                    <td><img src="../assets/book/B002.jpg" alt="" class="img-thumbnail" style="width: 100px; height: auto;"></td>
-                                    <td>Computer & Technology</td>
-                                    <td>This Is How They Tell Me the World Ends: The Cyberweapons Arms Race </td>
-                                    <td>Nicole Perlroth</td>
-                                    <td>Amazon</td>
-                                    <td>2021</td>
-                                    <td><p class="synopsis text-muted">“Part John le Carré and more parts Michael Crichton . . . spellbinding.” –The New Yorker
-                                        <br>
-                                        From The New York Times cybersecurity reporter Nicole Perlroth, the untold story of the cyberweapons market-the most secretive, invisible, government-backed market on earth-and a terrifying first look at a new kind of global warfare.</p></td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">
-                                        <a data-bs-toggle="modal" data-bs-target="#editModal"><img src="../assets/edit2.png" alt="" style="width: 25px;"></a>
-                                        <a data-bs-toggle="modal" data-bs-target="#deleteModal"><img src="../assets/delete.png" alt="" style="width: 25px;"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">3</td>
-                                    <td>B003</td>
-                                    <td><img src="../assets/book/B003.jpeg" alt="" class="img-thumbnail" style="width: 100px; height: auto;"></td>
-                                    <td>Novel</td>
-                                    <td>Pulang Pergi</td>
-                                    <td>Tere Liye</td>
-                                    <td>Sabak Grip Nusantara</td>
-                                    <td>2021</td>
-                                    <td><p class="synopsis text-muted">Ada jodoh yang ditemukan lewat tatapan pertama.
-                                        Ada persahabatan yang diawali lewat sapa hangat.
-                                        Bagaimana jika takdir bersama ternyata,
-                                        diawali dengan pertarungan mematikan?
-                                        Lantas semua cerita berkelindan dengan,
-                                        pengejaran demi pengejaran mencari jawaban?
-                                        Pulang-Pergi</p></td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">
-                                        <a data-bs-toggle="modal" data-bs-target="#editModal"><img src="../assets/edit2.png" alt="" style="width: 25px;"></a>
-                                        <a data-bs-toggle="modal" data-bs-target="#deleteModal"><img src="../assets/delete.png" alt="" style="width: 25px;"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">4</td>
-                                    <td>B004</td>
-                                    <td><img src="../assets/book/B004.jpg" alt="" class="img-thumbnail" style="width: 100px; height: auto;"></td>
-                                    <td>Personal Development</td>
-                                    <td>The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life </td>
-                                    <td>Mark Manson</td>
-                                    <td>HarperAudio</td>
-                                    <td>2016</td>
-                                    <td><p class="synopsis text-muted">In this generation-defining self-help guide, a superstar blogger cuts through the crap to show us how to stop trying to be positive all the time so that we can truly become better, happier people. <br>
-                                        For decades we've been told that positive thinking is the key to a happy, rich life. "F*ck positivity," Mark Manson says. "Let's be honest, shit is f*cked, and we have to live with it." In his wildly popular Internet blog, Manson doesn't sugarcoat or equivocate. He tells it like it is - a dose of raw, refreshing, honest truth that is sorely lacking today. The Subtle Art of Not Giving a F*ck is his antidote to the coddling, let's-all-feel-good mind-set that has infected modern society and spoiled a generation, rewarding them with gold medals just for showing up. <br>
-                                        Manson makes the argument, backed by both academic research and well-timed poop jokes, that improving our lives hinges not on our ability to turn lemons into lemonade but on learning to stomach lemons better. Human beings are flawed and limited - "not everybody can be extraordinary; there are winners and losers in society, and some of it is not fair or your fault". Manson advises us to get to know our limitations and accept them. Once we embrace our fears, faults, and uncertainties, once we stop running and avoiding and start confronting painful truths, we can begin to find the courage, perseverance, honesty, responsibility, curiosity, and forgiveness we seek. <br>
-                                        There are only so many things we can give a f*ck about, so we need to figure out which ones really matter, Manson makes clear. While money is nice, caring about what you do with your life is better, because true wealth is about experience. A much-needed grab-you-by-the-shoulders-and-look-you-in-the-eye moment of real talk, filled with entertaining stories and profane, ruthless humor, The Subtle Art of Not Giving a F*ck is a refreshing slap for a generation to help them lead contented, grounded lives. </p></td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">
-                                        <a data-bs-toggle="modal" data-bs-target="#editModal"><img src="../assets/edit2.png" alt="" style="width: 25px;"></a>
-                                        <a data-bs-toggle="modal" data-bs-target="#deleteModal"><img src="../assets/delete.png" alt="" style="width: 25px;"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">5</td>
-                                    <td>B005</td>
-                                    <td><img src="../assets/book/B005.jpeg" alt="" class="img-thumbnail" style="width: 100px; height: auto;"></td>
-                                    <td>Comic, Fantasy</td>
-                                    <td>Pergi</td>
-                                    <td>Tere Liye</td>
-                                    <td>Republika</td>
-                                    <td>2018</td>
-                                    <td><p class="synopsis text-muted">Sebuah kisah tentang menemukan tujuan, ke mana hendak pergi, melalui kenangan demi kenangan masa lalu, pertarungan hidup-mati, untuk memutuskan ke mana langkah kaki akan dibawa.
-                                        <br>
-                                        Kata “PERGI” dikatakan jika saah seorang akan menuju ke suatu tempat, atau bisa jadi menjadi menjadi suatu tujuan hidup seseorang. Menetukan akan kemana setelah ini itu tidaklah mudah, apalagi itu berhubungan dengan hidup pribadi. prosesnya tidak lah sesingkat ketika membuat status social media kalian.
-                                        <br>
-                                        Yah cerita dalam novel ini tentang Bujang, ya tokoh yang sama di novel PULANG dengan pengarang yang sama yaitu Tere Liye. Berkisah tentang Bujang yang sibuk menjadi pentolan keluarga Tong. Keluarga Tong adalah salah satu dari shadow economy. Shadow economy sendiri dibagi beberapa keluarga dengan daerah – daerah tersendiri. Terlalu rumit urusan keluarga shadow economy tersebut.
-                                        <br>
-                                        Kehidupan bujang setelah ditinggal oleh orang – orang terdekat nya seperti mamak, Tauke besar, dan beberapa guru yang mengajarinya. Bujang tinggal tetap di markas keluarga tong di ibu kota. Kali ini Bujang telah memiliki banyak rekan dan beberapa rekan lamanya yang ada di novel sebelumnya. Di cerita ini Bujang bukanlah menjadi tukang pukul nomor satu di keluarga tong, tetapi juga tetap menjadi keluarga tong.
-                                        <br>
-                                        Bujang bekerja sama dengan kepala tukang pukul keluarga tong yaitu Togar dan orang yang ada di novel sebelumnya yaitu Parwez untuk membawa keluarga Tong menjadi lebih besar dan berkembang kearah yang lebih baik.
-                                        <br>
-                                        Di novel ini bujang bertemu dengan Thomas ya yaitu salah satu tokoh di novel negeri para bedebah dan negeri di ujung tanduk. dan tokoh yang muncul beberapa kepala keluarga dari shadow economy. Dan ada sosok bertopeng misterius yang muncul di meksiko yang telah mengetahui nama asli bujang, padahal tidak sembarangan orang tahu nama asli dari Bujang si babi hutan.</p></td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">
-                                        <a data-bs-toggle="modal" data-bs-target="#editModal"><img src="../assets/edit2.png" alt="" style="width: 25px;"></a>
-                                        <a data-bs-toggle="modal" data-bs-target="#deleteModal"><img src="../assets/delete.png" alt="" style="width: 25px;"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">6</td>
-                                    <td>B006</td>
-                                    <td><img src="../assets/book/B006.jpg" alt="" class="img-thumbnail" style="width: 100px; height: auto;"></td>
-                                    <td>Computer & Technology</td>
-                                    <td>Thing Explainer: Complicated Stuff in Simple Words</td>
-                                    <td>Randall Munroe</td>
-                                    <td>Amazon</td>
-                                    <td>2015</td>
-                                    <td><p class="synopsis text-muted">Have you ever tried to learn more about some incredible thing, only to be frustrated by incomprehensible jargon? Randall Munroe is here to help. In Thing Explainer, he uses line drawings and only the thousand (or, rather, “ten hundred”) most common words to provide simple explanations for some of the most interesting stuff there is, including:
-                                        <br>
-                                        food-heating radio boxes (microwaves) <br>
-                                        tall roads (bridges) <br>
-                                        computer buildings (datacenters) <br>
-                                        the shared space house (the International Space Station) <br>
-                                        the other worlds around the sun (the solar system) <br>
-                                        the big flat rocks we live on (tectonic plates) <br>
-                                        the pieces everything is made of (the periodic table) <br>
-                                        planes with turning wings (helicopters) <br>
-                                        boxes that make clothes smell better (washers and dryers) <br>
-                                        the bags of stuff inside you (cells) <br>
-                                        
-                                        How do these things work? Where do they come from? What would life be like without them? And what would happen if we opened them up, heated them up, cooled them down, pointed them in a different direction, or pressed this button? In Thing Explainer, Munroe gives us the answers to these questions and so many more. Funny, interesting, and always understandable, this book is for anyone—age 5 to 105—who has ever wondered how things work, and why.</p></td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">
-                                        <a data-bs-toggle="modal" data-bs-target="#editModal"><img src="../assets/edit2.png" alt="" style="width: 25px;"></a>
-                                        <a data-bs-toggle="modal" data-bs-target="#deleteModal"><img src="../assets/delete.png" alt="" style="width: 25px;"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">7</td>
-                                    <td>B007</td>
-                                    <td><img src="../assets/book/B007.jpg" alt="" class="img-thumbnail" style="width: 100px; height: auto;"></td>
-                                    <td>Comic</td>
-                                    <td>Detektif Conan 96</td>
-                                    <td>Aoyama Gosho</td>
-                                    <td>Elex Media Pengarang</td>
-                                    <td>2019</td>
-                                    <td><p class="synopsis text-muted">Pertama kalinya Heiji Hattori berhadapan dengan si Kid Pencuri yang mengincar "Fairy Lip "! Di kasus lain Makoto Kyogoku terlibat dalam insiden di lokasi syuting TV drama. . . ! ? Selanjutnya ada informasi baru terkuaknya bos Organisasi Baju Hitam!!</p></td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">
-                                        <a data-bs-toggle="modal" data-bs-target="#editModal"><img src="../assets/edit2.png" alt="" style="width: 25px;"></a>
-                                        <a data-bs-toggle="modal" data-bs-target="#deleteModal"><img src="../assets/delete.png" alt="" style="width: 25px;"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">8</td>
-                                    <td>B008</td>
-                                    <td><img src="../assets/book/B008.jpg" alt="" class="img-thumbnail" style="width: 100px; height: auto;"></td>
-                                    <td>Comic</td>
-                                    <td>Avatar: The Last Airbender - Toph Beifong's Metalbending Academy</td>
-                                    <td>Faith Erin Hicks</td>
-                                    <td>Penguin Random House</td>
-                                    <td>2020</td>
-                                    <td><p class="synopsis text-muted">Things are looking bright at the Beifong Metalbending Academy! But after all the adventures Toph's had with Aang, Sokka, Zuko, and Katara, the whole thing feels a bit dull. Luckily, Sokka and Suki come to visit and reintroduce some familiar faces from their wandering days. And while out and about to celebrate, Toph discovers something that just might put the sparkle back in her eye...
-                                        <br>
-                                        Written by Faith Erin Hicks (The Adventures of Superhero Girl, The Nameless City) and drawn by Peter Wartman (Stonebreaker), with colors by Adele Matera and collaboration from Avatar: The Last Airbender animated series writer Tim Hedrick, this is the ultimate continuation of the hit animated series!</p></td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">
-                                        <a data-bs-toggle="modal" data-bs-target="#editModal"><img src="../assets/edit2.png" alt="" style="width: 25px;"></a>
-                                        <a data-bs-toggle="modal" data-bs-target="#deleteModal"><img src="../assets/delete.png" alt="" style="width: 25px;"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">9</td>
-                                    <td>B009</td>
-                                    <td><img src="../assets/book/B009.jpg" alt="" class="img-thumbnail" style="width: 100px; height: auto;"></td>
-                                    <td>Romance</td>
-                                    <td>Viscount Who Loved Me, The (Bridgertons Book 2)</td>
-                                    <td>Julia Quinn</td>
-                                    <td>HarperCollins Publishers</td>
-                                    <td>2015</td>
-                                    <td><p class="synopsis text-muted">From New York Times bestselling author Julia Quinn comes the second novel in the beloved Regency-set world of her charming, powerful Bridgerton family, now a series created by Shonda Rhimes for Netflix.
-                                        <br>
-                                        1814 promises to be another eventful season, but not, This Author believes, for Anthony Bridgerton, London's most elusive bachelor, who has shown no indication that he plans to marry. And in all truth, why should he? When it comes to playing the consummate rake, nobody does it better...                          --Lady Whistledown's Society Papers, April 1814
-                                        <br>
-                                        But this time the gossip columnists have it wrong. Anthony Bridgerton hasn't just decided to marry--he's even chosen a wife! The only obstacle is his intended's older sister, Kate Sheffield--the most meddlesome woman ever to grace a London ballroom. The spirited schemer is driving Anthony mad with her determination to stop the betrothal, but when he closes his eyes at night, Kate's the woman haunting his increasingly erotic dreams...
-                                        <br>
-                                        Contrary to popular belief, Kate is quite sure that reformed rakes do not make the best husbands--and Anthony Bridgerton is the most wicked rogue of them all. Kate's determined to protect her sister--but she fears her own heart is vulnerable. And when Anthony's lips touch hers, she's suddenly afraid she might not be able to resist the reprehensible rake herself...
-                                        <br>
-                                        This novel includes the 2nd epilogue, a peek at the story after the story.</p></td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">
-                                        <a data-bs-toggle="modal" data-bs-target="#editModal"><img src="../assets/edit2.png" alt="" style="width: 25px;"></a>
-                                        <a data-bs-toggle="modal" data-bs-target="#deleteModal"><img src="../assets/delete.png" alt="" style="width: 25px;"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">10</td>
-                                    <td>B010</td>
-                                    <td><img src="../assets/book/B010.jpg" alt="" class="img-thumbnail" style="width: 100px; height: auto;"></td>
-                                    <td>Romance</td>
-                                    <td>Forever Never</td>
-                                    <td>Lucy Score</td>
-                                    <td>Independently published</td>
-                                    <td>2020</td>
-                                    <td><p class="synopsis text-muted">Under Brick Callan’s mile-wide chest beats a loyal heart with a few cracks in it. He’s the steadfast, overprotective type. Especially when it comes to the one woman he can never have. It’s a long, complicated history punctuated by fights, friendship, family, and an attraction that strains his iron willpower.
-                                        <br>
-                                        When Remi Ford returns to Mackinac Island in the dead of winter with a secret, Brick makes it his mission to find out what put the shadows in those green eyes. Even if it means breaking down the walls he’s built between them. Even if it means falling for the one girl he’ll never get over.
-                                        <br>
-                                        The free-spirited artist just needs to lay low for a few weeks so she can figure a way out of this nightmare. She’s definitely not staying. Not when the man who broke her teenage heart into splinters keeps showing up at her parents’ dinner table. Remi doesn’t need broody, bearded Brick riding to her rescue…again. Not when it will put them both in danger, costing them much more than their hearts.
-                                        <br>
-                                        Author’s Note: Frenemies-to-lovers. Opposites attract. Slow burn. Girl in danger. Glorious, glorious banter. Fighting as foreplay. Small-town shenanigans. Big, grumpy, pining, overprotective hero. Wild-child, trouble-finding heroine who keeps on pushing the hero’s buttons. Steam Level: Lava. Suspense: Nail-biting. Feels: Big time.</p></td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">
-                                        <a data-bs-toggle="modal" data-bs-target="#editModal"><img src="../assets/edit2.png" alt="" style="width: 25px;"></a>
-                                        <a data-bs-toggle="modal" data-bs-target="#deleteModal"><img src="../assets/delete.png" alt="" style="width: 25px;"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">10</td>
-                                    <td>B010</td>
-                                    <td><img src="../assets/book/B010.jpg" alt="" class="img-thumbnail" style="width: 100px; height: auto;"></td>
-                                    <td>Romance</td>
-                                    <td>Forever Never</td>
-                                    <td>Lucy Score</td>
-                                    <td>Independently published</td>
-                                    <td>2020</td>
-                                    <td><p class="synopsis text-muted">Under Brick Callan’s mile-wide chest beats a loyal heart with a few cracks in it. He’s the steadfast, overprotective type. Especially when it comes to the one woman he can never have. It’s a long, complicated history punctuated by fights, friendship, family, and an attraction that strains his iron willpower.
-                                        <br>
-                                        When Remi Ford returns to Mackinac Island in the dead of winter with a secret, Brick makes it his mission to find out what put the shadows in those green eyes. Even if it means breaking down the walls he’s built between them. Even if it means falling for the one girl he’ll never get over.
-                                        <br>
-                                        The free-spirited artist just needs to lay low for a few weeks so she can figure a way out of this nightmare. She’s definitely not staying. Not when the man who broke her teenage heart into splinters keeps showing up at her parents’ dinner table. Remi doesn’t need broody, bearded Brick riding to her rescue…again. Not when it will put them both in danger, costing them much more than their hearts.
-                                        <br>
-                                        Author’s Note: Frenemies-to-lovers. Opposites attract. Slow burn. Girl in danger. Glorious, glorious banter. Fighting as foreplay. Small-town shenanigans. Big, grumpy, pining, overprotective hero. Wild-child, trouble-finding heroine who keeps on pushing the hero’s buttons. Steam Level: Lava. Suspense: Nail-biting. Feels: Big time.</p></td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">
-                                        <a data-bs-toggle="modal" data-bs-target="#editModal"><img src="../assets/edit2.png" alt="" style="width: 25px;"></a>
-                                        <a data-bs-toggle="modal" data-bs-target="#deleteModal"><img src="../assets/delete.png" alt="" style="width: 25px;"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">10</td>
-                                    <td>B010</td>
-                                    <td><img src="../assets/book/B010.jpg" alt="" class="img-thumbnail" style="width: 100px; height: auto;"></td>
-                                    <td>Romance</td>
-                                    <td>Forever Never</td>
-                                    <td>Lucy Score</td>
-                                    <td>Independently published</td>
-                                    <td>2020</td>
-                                    <td><p class="synopsis text-muted">Under Brick Callan’s mile-wide chest beats a loyal heart with a few cracks in it. He’s the steadfast, overprotective type. Especially when it comes to the one woman he can never have. It’s a long, complicated history punctuated by fights, friendship, family, and an attraction that strains his iron willpower.
-                                        <br>
-                                        When Remi Ford returns to Mackinac Island in the dead of winter with a secret, Brick makes it his mission to find out what put the shadows in those green eyes. Even if it means breaking down the walls he’s built between them. Even if it means falling for the one girl he’ll never get over.
-                                        <br>
-                                        The free-spirited artist just needs to lay low for a few weeks so she can figure a way out of this nightmare. She’s definitely not staying. Not when the man who broke her teenage heart into splinters keeps showing up at her parents’ dinner table. Remi doesn’t need broody, bearded Brick riding to her rescue…again. Not when it will put them both in danger, costing them much more than their hearts.
-                                        <br>
-                                        Author’s Note: Frenemies-to-lovers. Opposites attract. Slow burn. Girl in danger. Glorious, glorious banter. Fighting as foreplay. Small-town shenanigans. Big, grumpy, pining, overprotective hero. Wild-child, trouble-finding heroine who keeps on pushing the hero’s buttons. Steam Level: Lava. Suspense: Nail-biting. Feels: Big time.</p></td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">
-                                        <a data-bs-toggle="modal" data-bs-target="#editModal"><img src="../assets/edit2.png" alt="" style="width: 25px;"></a>
-                                        <a data-bs-toggle="modal" data-bs-target="#deleteModal"><img src="../assets/delete.png" alt="" style="width: 25px;"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">10</td>
-                                    <td>B010</td>
-                                    <td><img src="../assets/book/B010.jpg" alt="" class="img-thumbnail" style="width: 100px; height: auto;"></td>
-                                    <td>Romance</td>
-                                    <td>Forever Never</td>
-                                    <td>Lucy Score</td>
-                                    <td>Independently published</td>
-                                    <td>2020</td>
-                                    <td><p class="synopsis text-muted">Under Brick Callan’s mile-wide chest beats a loyal heart with a few cracks in it. He’s the steadfast, overprotective type. Especially when it comes to the one woman he can never have. It’s a long, complicated history punctuated by fights, friendship, family, and an attraction that strains his iron willpower.
-                                        <br>
-                                        When Remi Ford returns to Mackinac Island in the dead of winter with a secret, Brick makes it his mission to find out what put the shadows in those green eyes. Even if it means breaking down the walls he’s built between them. Even if it means falling for the one girl he’ll never get over.
-                                        <br>
-                                        The free-spirited artist just needs to lay low for a few weeks so she can figure a way out of this nightmare. She’s definitely not staying. Not when the man who broke her teenage heart into splinters keeps showing up at her parents’ dinner table. Remi doesn’t need broody, bearded Brick riding to her rescue…again. Not when it will put them both in danger, costing them much more than their hearts.
-                                        <br>
-                                        Author’s Note: Frenemies-to-lovers. Opposites attract. Slow burn. Girl in danger. Glorious, glorious banter. Fighting as foreplay. Small-town shenanigans. Big, grumpy, pining, overprotective hero. Wild-child, trouble-finding heroine who keeps on pushing the hero’s buttons. Steam Level: Lava. Suspense: Nail-biting. Feels: Big time.</p></td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">
-                                        <a data-bs-toggle="modal" data-bs-target="#editModal"><img src="../assets/edit2.png" alt="" style="width: 25px;"></a>
-                                        <a data-bs-toggle="modal" data-bs-target="#deleteModal"><img src="../assets/delete.png" alt="" style="width: 25px;"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">10</td>
-                                    <td>B010</td>
-                                    <td><img src="../assets/book/B010.jpg" alt="" class="img-thumbnail" style="width: 100px; height: auto;"></td>
-                                    <td>Romance</td>
-                                    <td>Forever Never</td>
-                                    <td>Lucy Score</td>
-                                    <td>Independently published</td>
-                                    <td>2020</td>
-                                    <td><p class="synopsis text-muted">Under Brick Callan’s mile-wide chest beats a loyal heart with a few cracks in it. He’s the steadfast, overprotective type. Especially when it comes to the one woman he can never have. It’s a long, complicated history punctuated by fights, friendship, family, and an attraction that strains his iron willpower.
-                                        <br>
-                                        When Remi Ford returns to Mackinac Island in the dead of winter with a secret, Brick makes it his mission to find out what put the shadows in those green eyes. Even if it means breaking down the walls he’s built between them. Even if it means falling for the one girl he’ll never get over.
-                                        <br>
-                                        The free-spirited artist just needs to lay low for a few weeks so she can figure a way out of this nightmare. She’s definitely not staying. Not when the man who broke her teenage heart into splinters keeps showing up at her parents’ dinner table. Remi doesn’t need broody, bearded Brick riding to her rescue…again. Not when it will put them both in danger, costing them much more than their hearts.
-                                        <br>
-                                        Author’s Note: Frenemies-to-lovers. Opposites attract. Slow burn. Girl in danger. Glorious, glorious banter. Fighting as foreplay. Small-town shenanigans. Big, grumpy, pining, overprotective hero. Wild-child, trouble-finding heroine who keeps on pushing the hero’s buttons. Steam Level: Lava. Suspense: Nail-biting. Feels: Big time.</p></td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">
-                                        <a data-bs-toggle="modal" data-bs-target="#editModal"><img src="../assets/edit2.png" alt="" style="width: 25px;"></a>
-                                        <a data-bs-toggle="modal" data-bs-target="#deleteModal"><img src="../assets/delete.png" alt="" style="width: 25px;"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">10</td>
-                                    <td>B010</td>
-                                    <td><img src="../assets/book/B010.jpg" alt="" class="img-thumbnail" style="width: 100px; height: auto;"></td>
-                                    <td>Romance</td>
-                                    <td>Forever Never</td>
-                                    <td>Lucy Score</td>
-                                    <td>Independently published</td>
-                                    <td>2020</td>
-                                    <td><p class="synopsis text-muted">Under Brick Callan’s mile-wide chest beats a loyal heart with a few cracks in it. He’s the steadfast, overprotective type. Especially when it comes to the one woman he can never have. It’s a long, complicated history punctuated by fights, friendship, family, and an attraction that strains his iron willpower.
-                                        <br>
-                                        When Remi Ford returns to Mackinac Island in the dead of winter with a secret, Brick makes it his mission to find out what put the shadows in those green eyes. Even if it means breaking down the walls he’s built between them. Even if it means falling for the one girl he’ll never get over.
-                                        <br>
-                                        The free-spirited artist just needs to lay low for a few weeks so she can figure a way out of this nightmare. She’s definitely not staying. Not when the man who broke her teenage heart into splinters keeps showing up at her parents’ dinner table. Remi doesn’t need broody, bearded Brick riding to her rescue…again. Not when it will put them both in danger, costing them much more than their hearts.
-                                        <br>
-                                        Author’s Note: Frenemies-to-lovers. Opposites attract. Slow burn. Girl in danger. Glorious, glorious banter. Fighting as foreplay. Small-town shenanigans. Big, grumpy, pining, overprotective hero. Wild-child, trouble-finding heroine who keeps on pushing the hero’s buttons. Steam Level: Lava. Suspense: Nail-biting. Feels: Big time.</p></td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">
-                                        <a data-bs-toggle="modal" data-bs-target="#editModal"><img src="../assets/edit2.png" alt="" style="width: 25px;"></a>
-                                        <a data-bs-toggle="modal" data-bs-target="#deleteModal"><img src="../assets/delete.png" alt="" style="width: 25px;"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">10</td>
-                                    <td>B010</td>
-                                    <td><img src="../assets/book/B010.jpg" alt="" class="img-thumbnail" style="width: 100px; height: auto;"></td>
-                                    <td>Romance</td>
-                                    <td>Forever Never</td>
-                                    <td>Lucy Score</td>
-                                    <td>Independently published</td>
-                                    <td>2020</td>
-                                    <td><p class="synopsis text-muted">Under Brick Callan’s mile-wide chest beats a loyal heart with a few cracks in it. He’s the steadfast, overprotective type. Especially when it comes to the one woman he can never have. It’s a long, complicated history punctuated by fights, friendship, family, and an attraction that strains his iron willpower.
-                                        <br>
-                                        When Remi Ford returns to Mackinac Island in the dead of winter with a secret, Brick makes it his mission to find out what put the shadows in those green eyes. Even if it means breaking down the walls he’s built between them. Even if it means falling for the one girl he’ll never get over.
-                                        <br>
-                                        The free-spirited artist just needs to lay low for a few weeks so she can figure a way out of this nightmare. She’s definitely not staying. Not when the man who broke her teenage heart into splinters keeps showing up at her parents’ dinner table. Remi doesn’t need broody, bearded Brick riding to her rescue…again. Not when it will put them both in danger, costing them much more than their hearts.
-                                        <br>
-                                        Author’s Note: Frenemies-to-lovers. Opposites attract. Slow burn. Girl in danger. Glorious, glorious banter. Fighting as foreplay. Small-town shenanigans. Big, grumpy, pining, overprotective hero. Wild-child, trouble-finding heroine who keeps on pushing the hero’s buttons. Steam Level: Lava. Suspense: Nail-biting. Feels: Big time.</p></td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">
-                                        <a data-bs-toggle="modal" data-bs-target="#editModal"><img src="../assets/edit2.png" alt="" style="width: 25px;"></a>
-                                        <a data-bs-toggle="modal" data-bs-target="#deleteModal"><img src="../assets/delete.png" alt="" style="width: 25px;"></a>
-                                    </td>
-                                </tr>
-                            </tbody>
+                            <tbody id="body-table"></tbody>
                         </table>
                     </div>
                 </div>
             </div>
 
         </div>
+    </div>
+
+    <div class="modal fade" id="editModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <form action="index.html">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title">Edit Data</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="form-group mb-3 mt-2">
+                                    <label for="id_book" class="form-label">ID Book</label>
+                                    <input type="text" class="form-control" id="id_book" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3 mt-2">
+                                    <label for="category" class="form-label">Category</label>
+                                    <input type="text" class="form-control" id="category">
+                                </div></div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3 mt-2">
+                                    <label for="title" class="form-label">Title</label>
+                                    <input type="text" class="form-control" id="title">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3 mt-2">
+                                    <label for="author" class="form-label">Author</label>
+                                    <input type="text" class="form-control" id="author">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3 mt-2">
+                                    <label for="publisher" class="form-label">Publisher</label>
+                                    <input type="text" class="form-control" id="publisher">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3 mt-2">
+                                    <label for="year" class="form-label">Year</label>
+                                    <input type="number" class="form-control" id="year">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3 mt-2">
+                                    <label for="stock" class="form-label">Stock</label>
+                                    <input type="number" class="form-control" id="stock">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 form-control">
+                            <label for="synopsis" class="form-label">Synopsis</label>
+                            <textarea class="form-control" id="synopsis" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success" onclick="Swal('Updated!', 'Data has been updated. ', 'success');">EDIT</button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
@@ -511,5 +245,9 @@
 
     <!-- Page level custom scripts -->
     <script src="../js/demo/datatables-demo.js"></script>
+
+    <!-- sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
