@@ -254,7 +254,16 @@ a{
     align-items: center;
 }
 
+/* catalogue */
 
+.test1{
+  width: 100%;
+}
+.img-container{
+  width: 100%;
+}
+
+/* end catalogue */
 
 
 
