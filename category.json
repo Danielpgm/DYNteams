@@ -1,0 +1,50 @@
+[
+    {
+        "id" : 1,
+        "genre" : "Novel"
+    },
+    {
+        "id" : 2,
+        "genre" : "Computer & Technology"
+    },
+    {
+        "id" : 3,
+        "genre" : "Personal Development"
+    },
+    {
+        "id" : 4,
+        "genre" : "Comic, Fantasy"
+    },
+    {
+        "id" : 5,
+        "genre" : "Romance"
+    },
+    {
+        "id" : 6,
+        "genre" : "History"
+    },
+    {
+        "id" : 7,
+        "genre" : "Travel"
+    },
+    {
+        "id" : 8,
+        "genre" : "Education"
+    },
+    {
+        "id" : 9,
+        "genre" : "Entertainment"
+    },
+    {
+        "id" : 10,
+        "genre" : "Business"
+    },
+    {
+        "id" : 11,
+        "genre" : "Biographies"
+    },
+    {
+        "id" : 12,
+        "genre" : "Coookbooks"
+    }
+]
