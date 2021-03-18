@@ -256,6 +256,10 @@ a{
 
 /* catalogue */
 
+.genre{
+  font-size: 14px;
+}
+
 .test1{
   width: 100%;
 }
@@ -567,7 +571,6 @@ a{
     font-size:13px;
     margin-bottom:0;
   }
-
   /* collapsible */
   .collapsible {
     background-color: #777;
@@ -591,3 +594,4 @@ a{
     overflow: hidden;
     background-color: #f1f1f1;
   }
+
