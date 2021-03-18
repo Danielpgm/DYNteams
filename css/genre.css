@@ -105,19 +105,20 @@ a{
 }
 .back-cover{
     background-color: rgb(255, 240, 240);
-    width: 60%;
-    height: 480px;
+    width: 63.5%;
+    height: 530px;
     opacity: 0.3;
     margin-top: 20px;
     position: absolute;
     top: 48%;
-    left: 50%;
+    left: 49%;
     transform: translate(-50%, -50%);
     box-shadow: 1px 10px 8px 0px;
 }
 .main-content{
-    width: 60%;
-    height: 400px;
+    /* background-color: #2e2d2d; */
+    width: 64%;
+    height: 530px;
     margin-top: 20px;
     padding-left: 10px;
     position: absolute;
@@ -137,6 +138,9 @@ a{
     object-fit:cover;
     box-shadow: 5px 1px 20px 1px black;
 }
+.card-body{
+    width: 100px;
+}
 
 /* end main */
 
@@ -154,3 +158,14 @@ a{
     color: rgb(83, 81, 81);
 }
 /* end footer */
+
+.tes1{
+    height: 50%;
+    width: 100%;
+}
+
+.tes2{
+    height: 50%;
+    width: 100%;
+    background-color: rgb(248, 232, 211);
+}
