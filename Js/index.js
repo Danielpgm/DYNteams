@@ -1,10 +1,11 @@
-fetch('../book.json')
+fetch('buku2.json')
     .then(response => response.json())
     .then(json =>{
         getBook(json);
+        console.log(json);
     })
     // handling error
-    .catch(err => console.log(err))
+    .catch(err => {console.log(err)})
     
     
 function getBook(data) {
@@ -47,6 +48,7 @@ function getBook(data) {
 
     const carouselPopular = document.getElementById('owlCarousel');
     carouselPopular.innerHTML = popular;
+    console.log(carouselPopular);
 
     var p = $('.owl-carousel');
         p.owlCarousel({
