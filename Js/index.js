@@ -1,3 +1,4 @@
+
 function fetchData(){
     fetch('book.json')
     .then(response => response.json())
@@ -8,7 +9,6 @@ function fetchData(){
     // handling error
     .catch(err => console.log(err))
 }
-
 
 function getBook(data) {
     let output = "";
@@ -50,6 +50,7 @@ function getBook(data) {
 
     const carouselPopular = document.getElementById('owlCarousel');
     carouselPopular.innerHTML = popular;
+    console.log(carouselPopular);
 
     console.log(carouselPopular);
 
