@@ -1,4 +1,4 @@
-fetch('../book.json')
+fetch('book.json')
     .then(response => response.json())
     .then(json =>{
         getBook(json);
@@ -37,7 +37,7 @@ function getBook(data) {
 }
 
 function editBook(no){
-    fetch("../book.json")
+    fetch("book.json")
     .then((response) => response.json())
     .then((json) => {
         document.getElementById('id_book').value=json[no].id_book;
@@ -55,7 +55,7 @@ function editBook(no){
 }
 
 function deleteBook(no){
-    fetch("../book.json")
+    fetch("book.json")
     .then((response) => response.json())
     .then((json) => {
         swal({

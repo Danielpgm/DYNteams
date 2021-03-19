@@ -33,8 +33,8 @@
                 <img src="assets/logoBook.png" alt="logo library" class="logo">
             </div>
     
-            <a class="akun" href="#">
-                <button type="button" class="btn btn-light btnLogin">Nazli Alvira Siregar</button>
+            <a class="akun" href="login.html" id="profileLink">
+                <button type="button" class="btn" id="btnProfile"> Login/Sign-Up</button>
             </a>
     
         </div>
@@ -74,6 +74,19 @@
     </footer>
 
     <script>
+
+        var usernameLogin = sessionStorage.getItem("usernameLogin");
+            console.log("username : " + usernameLogin);
+
+        if(usernameLogin !== null){
+            document.getElementById('btnProfile').innerHTML = usernameLogin;
+            document.getElementById('profileLink').href = 'profileuser.html';
+        }
+        else{
+            document.getElementById('btnProfile').innerHTML = 'Login/Sign-Up';
+            document.getElementById('profileLink').href = 'login.html';
+        }
+
         // navbar javascript
         function openNav() {
             document.getElementById("myNav").style.width = "100%";

@@ -1,13 +1,15 @@
-fetch('buku2.json')
+
+function fetchData(){
+    fetch('book.json')
     .then(response => response.json())
     .then(json =>{
         getBook(json);
         console.log(json);
     })
     // handling error
-    .catch(err => {console.log(err)})
-    
-    
+    .catch(err => console.log(err))
+}
+
 function getBook(data) {
     let output = "";
     let popular = "";
@@ -50,6 +52,8 @@ function getBook(data) {
     carouselPopular.innerHTML = popular;
     console.log(carouselPopular);
 
+    console.log(carouselPopular);
+
     var p = $('.owl-carousel');
         p.owlCarousel({
             margin: 10,
@@ -70,7 +74,7 @@ function getBook(data) {
 }
 
 function detailBook(id) {
-    fetch("../book.json")
+    fetch("book.json")
     .then((response) => response.json())
     .then((json) => {
         document.getElementById('title_book').innerHTML = json[id].title;
@@ -86,6 +90,6 @@ function detailBook(id) {
     .catch((err) => console.log(err));
 }
 
-
+fetchData();
 
 

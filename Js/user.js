@@ -1,4 +1,4 @@
-fetch('../user.json')
+fetch('user.json')
     .then(response => response.json())
     .then(json =>{
         getUser(json);
@@ -55,7 +55,7 @@ function getUser(data) {
 }
 
 function editUser(no){
-    fetch("../user.json")
+    fetch("user.json")
     .then((response) => response.json())
     .then((json) => {
         document.getElementById('id_user').value=json[no].id_user;
@@ -71,7 +71,7 @@ function editUser(no){
 }
 
 function resetPassword(no){
-    fetch("../user.json")
+    fetch("user.json")
     .then((response) => response.json())
     .then((json) => {
         swal({
@@ -92,7 +92,7 @@ function resetPassword(no){
 }
 
 function deactive(no){
-    fetch("../user.json")
+    fetch("user.json")
     .then((response) => response.json())
     .then((json) => {
         swal({
@@ -113,7 +113,7 @@ function deactive(no){
 }
 
 function active(no){
-    fetch("../user.json")
+    fetch("user.json")
     .then((response) => response.json())
     .then((json) => {
         swal({

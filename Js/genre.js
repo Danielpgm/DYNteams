@@ -1,4 +1,4 @@
-fetch('../book.json')
+fetch('book.json')
     .then(response => response.json())
     .then(json =>{
         getBook(json);
@@ -82,7 +82,7 @@ function getBook(data) {
 }
 
 function detailBook(id) {
-    fetch("../book.json")
+    fetch("book.json")
     .then((response) => response.json())
     .then((json) => {
         document.getElementById('title_book').innerHTML = json[id].title;
