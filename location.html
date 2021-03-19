@@ -22,7 +22,7 @@
                     <a href="index.html">Home</a>
                     <a href="catalogue.html" onclick="closeNav()">Catalogue</a>
                     <a href="#locationPage">Location</a>
-                    <a href="profileuser.html">Profile</a>
+                    <a href="profileuser.html" id="profileLogin">Profile</a>
                     <a href="login.html">Logout</a>
                 </div>
             </div>
@@ -85,6 +85,7 @@
         else{
             document.getElementById('btnProfile').innerHTML = 'Login';
             document.getElementById('profileLink').href = 'login.html';
+            document.getElementById('profileLogin').href = 'login.html';
         }
 
         // navbar javascript
