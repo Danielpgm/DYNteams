@@ -1,4 +1,4 @@
-fetch('../book.json')
+fetch('book.json')
     .then(response => response.json())
     .then(json =>{
         getProfileBook(json);

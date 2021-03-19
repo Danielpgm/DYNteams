@@ -1,4 +1,4 @@
-fetch('../activity.json')
+fetch('activity.json')
     .then(response => response.json())
     .then(json =>{
         getActivity(json);
@@ -40,7 +40,7 @@ function getActivity(data) {
 }
 
 function extend(no){
-    fetch("../activity.json")
+    fetch("activity.json")
     .then((response) => response.json())
     .then((json) => {
         document.getElementById('id_activity').value=json[no].id_activity;
@@ -55,7 +55,7 @@ function extend(no){
 }
 
 function returnBook(no){
-    fetch("../activity.json")
+    fetch("activity.json")
     .then((response) => response.json())
     .then((json) => {
         swal({
