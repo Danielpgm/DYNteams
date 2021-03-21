@@ -28,7 +28,7 @@
                     <a href="genreuser.html">Catalogue</a>
                     <a href="location.html">Location</a>
                     <a href="profileuser.html" id="profileLogin">Profile</a>
-                    <a href="#" onclick="logout()">Logout</a>
+                    <a href="login.html"">Logout</a>
                 </div>
             </div>
     
@@ -81,10 +81,12 @@
         <div class="row text-center">
             <h2 class="pageTitle">R&nbsp;E&nbsp;C&nbsp;O&nbsp;M&nbsp;M&nbsp;E&nbsp;N&nbsp;D&nbsp;A&nbsp;T&nbsp;I&nbsp;O&nbsp;N &nbsp;&nbsp; F&nbsp;R&nbsp;O&nbsp;M &nbsp;&nbsp; U&nbsp;S</h2>
         </div>
-        <div class="row mx-5 my-3" id="recommended"></div>
+        <div class="d-flex flex-wrap">
+            <div class="row justify-content-center" id="recommended"></div>
+        </div>
     </div>
 
-    <section class="pt-5 pb-5 newBook" >
+    <section class="pt-5 pb-5 newBook">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -98,6 +100,7 @@
         </div>
     </section>
     
+    
     <!-- Modal -->
     <div class="modal fade" id="viewDetail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -105,7 +108,7 @@
             <div class="modal-header">
                 <div class="row text-center" style="width: 100%;">
                     <h5 class="modal-title fw-bold text-uppercase" id="title_book"></h5> <br>
-                    <strong id="year"></strong>
+                    <strong class="yearViewDetail" id="year"></strong>
                 </div>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -114,7 +117,7 @@
                     <div class="row">
                         <div class="col-xl-4">
                             <div class="row">
-                                <img class="img-fluid" id="pic" src="" alt="">
+                                <img class="img-fluid picModal" id="pic" src="" alt="">
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
@@ -216,17 +219,10 @@
             document.getElementById('btnProfile').innerHTML = usernameLogin;
             document.getElementById('profileLink').href = 'profileuser.html';
         }
-        else{
+        else if (usernameLogin === null){
             document.getElementById('btnProfile').innerHTML = 'Login';
             document.getElementById('profileLink').href = 'login.html';
             document.getElementById('profileLogin').href = 'login.html';
-        }
-        
-        // logout
-        function logout(){
-            // var usernameLogin = null;
-            sessionStorage.setItem("usernameLogin", null);
-            location.replace('index.html');
         }
 
         // navbar javascript

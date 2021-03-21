@@ -1,4 +1,4 @@
-fetch('activity.json')
+fetch('../activity.json')
     .then(response => response.json())
     .then(json =>{
         getActivity(json);
@@ -10,6 +10,7 @@ fetch('activity.json')
 function getActivity(data) {
     
     let output = "";
+    
     
     data.forEach((element) => {
         if((element.confirm) === 0){
@@ -35,7 +36,7 @@ function getActivity(data) {
 }
 
 function accept(no){
-    fetch("activity.json")
+    fetch("../activity.json")
     .then((response) => response.json())
     .then((json) => {
         swal({
@@ -55,7 +56,7 @@ function accept(no){
 }
 
 function decline(no){
-    fetch("activity.json")
+    fetch("../activity.json")
     .then((response) => response.json())
     .then((json) => {
         swal({
